@@ -11,5 +11,4 @@ var cam = view_camera[0]
 if (deltaTimeCounter < audio_sound_length(panthress) && global.gamestate != "start")
 {
 	camera_set_view_pos(cam,camera_get_view_x(cam)+random_range(-shake,shake),camera_get_view_y(cam)+random_range(-shake,shake) + move) 
- show_debug_message(deltaTimeCounter)
 }
