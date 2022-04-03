@@ -5,6 +5,7 @@
 rotation_speed = 5
 laser_rotation_speed = 1
 movement_speed = (room_height - camera_get_view_height(view_camera[0])) / audio_sound_length(panthress)
+
 fire_rate = 0.2
 fire_cooldown = 0
 
@@ -16,6 +17,11 @@ turretsA = [0, 90, 180, 270];
 turretsB = [45, 135, 225, 315]; 
 
 lasers = [];
+
+max_beam_firing_cooldown = 20
+beam_firing_cooldown = max_beam_firing_cooldown
+max_beam_firing_timer = 10
+beam_firing_timer = max_beam_firing_timer
 
 PROJECTILE_FIRING = "projectile_firing"
 PROJECTILE_BEAM = "beam_firing"

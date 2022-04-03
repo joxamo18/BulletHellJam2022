@@ -7,6 +7,28 @@ var centerY = y-sprite_get_yoffset(sprite_index)+(sprite_get_height(sprite_index
 var _dt = delta_time / 1000000
 var rotationDirection = ""
 
+//managing state changes
+if (beam_firing_cooldown > 0)
+{
+	if (instance_exists(obj_laser))
+	{
+
+		instance_destroy(obj_laser)
+	}
+	current_state = PROJECTILE_FIRING
+	beam_firing_cooldown -= _dt
+}
+else
+{
+	current_state = PROJECTILE_BEAM	
+	beam_firing_timer -= _dt;
+	if (beam_firing_timer <= 0)
+	{
+		beam_firing_cooldown = max_beam_firing_cooldown
+		beam_firing_timer = max_beam_firing_timer
+	}
+}
+
 if (left_direction_timer > 0) 
 {
 	left_direction_timer -= _dt
@@ -14,6 +36,7 @@ if (left_direction_timer > 0)
 	if (left_direction_timer <= 0)
 		right_direction_timer = max_rotation_timer
 }
+
 if (right_direction_timer > 0) 
 {
 	right_direction_timer -= _dt
