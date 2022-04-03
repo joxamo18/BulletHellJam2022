@@ -3,6 +3,7 @@
 
 
 rotation_speed = 5
+laser_rotation_speed = 1
 movement_speed = (room_height - camera_get_view_height(view_camera[0])) / audio_sound_length(panthress)
 fire_rate = 0.2
 fire_cooldown = 0
@@ -11,9 +12,12 @@ max_rotation_timer = 10;
 left_direction_timer = max_rotation_timer;
 right_direction_timer = 0;
 
-turretsA = [0, 90, 180, 275];  
+turretsA = [0, 90, 180, 270];  
+turretsB = [45, 135, 225, 315]; 
 
+lasers = [];
 
 PROJECTILE_FIRING = "projectile_firing"
-current_state = PROJECTILE_FIRING
+PROJECTILE_BEAM = "beam_firing"
+current_state = PROJECTILE_BEAM
 
