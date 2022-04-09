@@ -11,6 +11,7 @@
     {"id":{"name":"BatTestRoom","path":"rooms/BatTestRoom/BatTestRoom.yy",},"order":4,},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},"order":3,},
     {"id":{"name":"spr_enemy_flash","path":"sprites/spr_enemy_flash/spr_enemy_flash.yy",},"order":4,},
+    {"id":{"name":"Sprite26","path":"sprites/Sprite26/Sprite26.yy",},"order":14,},
     {"id":{"name":"spr_enemy_bullet","path":"sprites/spr_enemy_bullet/spr_enemy_bullet.yy",},"order":12,},
     {"id":{"name":"Sprite2021","path":"sprites/Sprite2021/Sprite2021.yy",},"order":21,},
     {"id":{"name":"obj_test","path":"objects/obj_test/obj_test.yy",},"order":13,},
