@@ -7,8 +7,8 @@
     {"speed":100.0,"x":1024.0,"y":6272.0,},
   ],
   "parent": {
-    "name": "BulletHellJam",
-    "path": "BulletHellJam.yyp",
+    "name": "MainRoom Paths",
+    "path": "folders/MainRoom Paths.yy",
   },
   "resourceVersion": "1.0",
   "name": "MainRoom_HorizontalPath",

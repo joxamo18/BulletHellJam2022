@@ -4,7 +4,7 @@
 
 alarm[0] = timer;
 
-if (count < max_spawn - 1 && global.gamestate != "start")
+if (count < max_spawn - 1 && global.gamestate != "start" && can_spawn)
 {
 	count++;
 	var bat = instance_create_layer(x,y,"lay_enemy", enemy_to_spawn);
