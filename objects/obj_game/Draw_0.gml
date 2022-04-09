@@ -45,4 +45,8 @@ if (global.gamestate == "start")
 
 
 
-if (keyboard_check(vk_enter)) global.gamestate = "main_level";
+if (keyboard_check(vk_enter) && global.gamestate == "start")
+{
+	audio_play_sound(panthress, 0, false);
+	global.gamestate = "main_level";
+}
