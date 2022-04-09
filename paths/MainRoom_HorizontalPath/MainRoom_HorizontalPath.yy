@@ -2,13 +2,16 @@
   "kind": 0,
   "closed": false,
   "precision": 4,
-  "points": [],
+  "points": [
+    {"speed":100.0,"x":1024.0,"y":5024.0,},
+    {"speed":100.0,"x":1024.0,"y":6272.0,},
+  ],
   "parent": {
     "name": "BulletHellJam",
     "path": "BulletHellJam.yyp",
   },
   "resourceVersion": "1.0",
-  "name": "Path3",
+  "name": "MainRoom_HorizontalPath",
   "tags": [],
   "resourceType": "GMPath",
 }
