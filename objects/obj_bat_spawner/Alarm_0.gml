@@ -12,6 +12,6 @@ if (count < max_spawn - 1 && global.gamestate != "start" && can_spawn)
 	var absolute = absolute_path
 	with (bat)
 	{
-		path_start(newPath, 8, path_action_stop, absolute)
+		path_start(newPath, 4, path_action_stop, absolute)
 	}
 }

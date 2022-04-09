@@ -6,4 +6,4 @@ with(other)
 }
 
 //destroy the bullet
-instance_destroy();
+//instance_destroy();
