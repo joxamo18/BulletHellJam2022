@@ -13,8 +13,8 @@
     {"speed":100.0,"x":432.0,"y":2240.0,},
   ],
   "parent": {
-    "name": "BulletHellJam",
-    "path": "BulletHellJam.yyp",
+    "name": "Room2",
+    "path": "folders/MainRoom Paths/Room2.yy",
   },
   "resourceVersion": "1.0",
   "name": "LeftHook",

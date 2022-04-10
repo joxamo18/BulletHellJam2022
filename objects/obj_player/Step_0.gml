@@ -35,7 +35,7 @@ if (mouse_check_button(mb_left))
 			}
 		}
 		//set cooldown to current weaponspeed
-		cooldown = weaponspd;
+		cooldown = fire_rate;
 	}
 }
 else 

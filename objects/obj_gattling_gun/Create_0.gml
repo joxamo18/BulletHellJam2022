@@ -5,7 +5,7 @@ fire_cooldown = 0
 
 path = path_add()
 
-target_x = obj_enemy_goal.x
-target_y = obj_enemy_goal.y
+target_x = gattling_gun_goal.x
+target_y = gattling_gun_goal.y
 
 alarm[0] = 1

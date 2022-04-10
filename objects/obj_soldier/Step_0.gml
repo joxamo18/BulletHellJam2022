@@ -13,7 +13,7 @@ if (fire_cooldown <= 0 && can_fire)
 	with (bullets)
 	{
 		direction = point_direction(x , y, obj_player.x, obj_player.y)
-		speed = 15
+		speed = 10
 	}
 	
 	fire_cooldown = fire_rate
