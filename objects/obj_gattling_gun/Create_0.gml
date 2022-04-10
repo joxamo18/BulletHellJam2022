@@ -3,6 +3,13 @@
 fire_rate = .2
 fire_cooldown = 0
 
+hp = 100
+hp_max = hp
+
+healthbar_width = 200
+//healthbar_height = 16
+
+
 path = path_add()
 
 target_x = gattling_gun_goal.x
