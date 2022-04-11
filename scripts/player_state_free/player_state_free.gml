@@ -32,18 +32,7 @@ function player_state_free(){
 	//tick down cooldown every frame
 	if (cooldown > 0) cooldown--; 
 
-	//Move in four directions when pressing arrow keys.
-	if (keyboard_check(ord("A")))	x-= spd;
-	if (keyboard_check(ord("D")))	x+= spd;
-	if (keyboard_check(ord("W")))		y-= spd;
-	if (keyboard_check(ord("S")))	y+= spd;
-	
-		//Change player direction state
-	if (keyboard_check(ord("A")))	player_direction = PLAYERDIRECTION.LEFT;
-	if (keyboard_check(ord("D")))	player_direction = PLAYERDIRECTION.RIGHT;
-	if (keyboard_check(ord("W")))	player_direction = PLAYERDIRECTION.UP;
-	if (keyboard_check(ord("S")))	player_direction = PLAYERDIRECTION.DOWN;
-	
+	player_movement()	
 	
 	if (mouse_check_button(mb_right)) state = PLAYERSTATE.ATTACK_SLASH_1
 	

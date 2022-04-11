@@ -12,13 +12,20 @@ hit_by_attack = ds_list_create();
 slash_speed = 2
 hp = 3
 
+hit_cooldown_rate = 3;
+hit_cooldown = 0;
+player_hit_freeze = hit_cooldown_rate - 0.2;
+flashAlpha = 0;
+flashColor = c_white;
+
 enemy_list = [obj_bat, obj_bat_projectile_death, obj_soldier, obj_gattling_gun]
 
 enum PLAYERSTATE
 {
 	FREE,
 	ATTACK_SLASH_1,
-	ATTACK_COMBO
+	ATTACK_COMBO,
+	TAKING_DAMAGE
 }
 
 enum PLAYERDIRECTION

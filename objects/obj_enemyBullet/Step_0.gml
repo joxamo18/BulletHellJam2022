@@ -11,6 +11,9 @@
 	
 	if (collision_point(x, y, obj_player, false, false))
 	{
+		with(obj_player)
+		{
+			state = PLAYERSTATE.TAKING_DAMAGE;
+		}
 		instance_destroy(self)
-		obj_player.hp--;
 	}
