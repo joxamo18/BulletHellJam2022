@@ -3,6 +3,10 @@ if (global.gamestate == "start")
 	return
 }
 
+if (hp == 0)
+{
+	instance_destroy()
+}
 switch (state)
 {
 	case PLAYERSTATE.FREE: player_state_free(); break;

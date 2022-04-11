@@ -9,29 +9,15 @@ function player_state_free(){
 		if (cooldown == 0)
 		{
 			//reduce ammo of special weapon if necessary
-			ammo--;
-			if (ammo < 1) weapon = 0;
+
 		
 			//fire normal weapon (1 bullet)
-			if (weapon == 0)
+			if (uzi_ammo > 0)
 			{
-				bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet);
+				uzi_ammo--;
+				instance_create_layer(x,y,"lay_bullets",obj_bullet);
 			}
-			else
-			{
-				//fire special weapon (3 bullets split)
-				instance_create_layer(x,y,"lay_bullets",obj_bullet2);
-				bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet2);
-				with (bullet)
-				{
-					direction-=15;
-				}
-				bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet2);
-				with (bullet)
-				{
-					direction+=15;
-				}
-			}
+			
 			//set cooldown to current weaponspeed
 			cooldown = fire_rate;
 		}

@@ -41,7 +41,7 @@ function player_state_attack_slash_1(){
 	
 	mask_index = slash_mask
 
-	
+	//loop through all enemies and see if hit occurs	
 	for (var j = 0; j < array_length(enemy_list); j++)
 	{
 		var hit_by_attack_now = ds_list_create()
@@ -57,6 +57,16 @@ function player_state_attack_slash_1(){
 					ds_list_add(hit_by_attack, hit_id)
 					with (hit_id)
 					{
+						if (obj_player.uzi_ammo < 20)
+						{
+							var ammo_to_add = 5
+							if (obj_player.uzi_ammo + ammo_to_add > 20)
+							{
+								ammo_to_add = 20 - obj_player.uzi_ammo;
+							}
+							obj_player.uzi_ammo += ammo_to_add
+						}
+
 						hp = hp - 5;
 						if (hp <= 0)
 						{

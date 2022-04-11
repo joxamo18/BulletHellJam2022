@@ -4,7 +4,13 @@
 	var layerID = layer_get_id("Walls");
 	var tiles = layer_tilemap_get_id(layerID)
 	
-	if (collision_point(x, y, obj_player, false, false) || tilemap_get_at_pixel(tiles, x, y) || collision_point(x, y, obj_wall, false, false))
+	if (tilemap_get_at_pixel(tiles, x, y) || collision_point(x, y, obj_wall, false, false))
 	{
 		instance_destroy(self)
+	}
+	
+	if (collision_point(x, y, obj_player, false, false))
+	{
+		instance_destroy(self)
+		obj_player.hp--;
 	}
