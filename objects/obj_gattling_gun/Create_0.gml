@@ -3,7 +3,7 @@
 fire_rate = .2
 fire_cooldown = 0
 
-hp = 100
+hp = 50
 hp_max = hp
 
 healthbar_width = 200

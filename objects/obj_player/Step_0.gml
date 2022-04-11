@@ -3,57 +3,9 @@ if (global.gamestate == "start")
 	return
 }
 
-//Fire when pressing the left mouse button
-if (mouse_check_button(mb_left)) 
+switch (state)
 {
-	//reduce speed to account for recoil
-	spd = 2;
-	if (cooldown == 0)
-	{
-		//reduce ammo of special weapon if necessary
-		ammo--;
-		if (ammo < 1) weapon = 0;
+	case PLAYERSTATE.FREE: player_state_free(); break;
+	case PLAYERSTATE.ATTACK_SLASH_1: player_state_attack_slash_1(); break;
 		
-		//fire normal weapon (1 bullet)
-		if (weapon == 0)
-		{
-			bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet);
-		}
-		else
-		{
-			//fire special weapon (3 bullets split)
-			instance_create_layer(x,y,"lay_bullets",obj_bullet2);
-			bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet2);
-			with (bullet)
-			{
-				direction-=15;
-			}
-			bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet2);
-			with (bullet)
-			{
-				direction+=15;
-			}
-		}
-		//set cooldown to current weaponspeed
-		cooldown = fire_rate;
-	}
-}
-else 
-{
-	//restore speed to default
-	spd = basespd; 
-}
-
-
-//tick down cooldown every frame
-if (cooldown > 0) cooldown--; 
-
-//Move in four directions when pressing arrow keys.
-if (keyboard_check(ord("A")))	x-= spd;
-if (keyboard_check(ord("D")))	x+= spd;
-if (keyboard_check(ord("W")))		y-= spd;
-if (keyboard_check(ord("S")))	y+= spd;
-
-//angle sprite towards mouse cursor
-image_angle = point_direction(x,y,mouse_x,mouse_y);
-
+}		

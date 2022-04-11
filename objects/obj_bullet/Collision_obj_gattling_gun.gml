@@ -4,7 +4,7 @@ with(other)
 {
 	if (in_combat)
 	{
-		hp = hp - 5;	
+		hp--;	
 	}
 }
 

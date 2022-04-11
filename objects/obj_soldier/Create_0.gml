@@ -2,7 +2,7 @@
 // You can write your code in this editor
 fire_rate = .4
 fire_cooldown = 0
-hp = 4
+hp = 15
 can_fire = false
 
 path = path_add()
