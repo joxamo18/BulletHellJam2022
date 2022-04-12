@@ -12,22 +12,35 @@ function player_state_attack_slash_1(){
 		case PLAYERDIRECTION.LEFT:
 			slash_sprite = spr_player_slash_1_left
 			slash_mask = spr_player_slash_1_left_hb
-			x -= slash_speed
+			if (place_free(x - slash_speed, y))
+			{
+				x -= slash_speed
+			}
 			break
 		case PLAYERDIRECTION.RIGHT:
 			slash_sprite = spr_player_slash_1_right
 			slash_mask = spr_player_slash_1_right_hb
-			x += slash_speed
+			if (place_free(x + slash_speed, y))
+			{
+				x += slash_speed
+			}
 			break
 		case PLAYERDIRECTION.UP:
 			slash_sprite = spr_player_slash_1_up
 			slash_mask = spr_player_slash_1_up_hb
-			y -= slash_speed
+			if (place_free(x, y - slash_speed))
+			{
+				y -= slash_speed
+			}
+
 			break
 		case PLAYERDIRECTION.DOWN:
 			slash_sprite = spr_player_slash_1_down
 			slash_mask = spr_player_slash_1_down_hb
-			y += slash_speed
+			if (place_free(x, y + slash_speed))
+			{
+				y += slash_speed
+			}
 			break
 	}
 
@@ -37,8 +50,7 @@ function player_state_attack_slash_1(){
 		image_index = 0
 		ds_list_clear(hit_by_attack)
 	}
-	
-	
+
 	mask_index = slash_mask
 
 	//loop through all enemies and see if hit occurs	

@@ -37,6 +37,9 @@ function player_state_taking_damage(){
 	}
 	else
 	{
-		y += 5
+		if (place_free(x, y + spd))
+		{
+			y += 5
+		}
 	}
 }

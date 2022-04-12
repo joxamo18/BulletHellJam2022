@@ -1,11 +1,18 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function player_movement(){
+
 	//Move in four directions when pressing arrow keys.
-	if (keyboard_check(ord("A")))	x-= spd;
-	if (keyboard_check(ord("D")))	x+= spd;
-	if (keyboard_check(ord("W")))		y-= spd;
-	if (keyboard_check(ord("S")))	y+= spd;
+	if (keyboard_check(ord("A")) && place_free(x - spd, y))	x-= spd;
+	if (keyboard_check(ord("D")) && place_free(x + spd, y))	x+= spd;
+	if (keyboard_check(ord("W")) && place_free(x, y - spd))		y-= spd;
+	if (keyboard_check(ord("S")) && place_free(x, y + spd)) {
+		y+= spd;
+		show_debug_message("going down")
+	}
+	else {
+		show_debug_message("cant")
+	}
 	
 		//Change player direction state
 	if (keyboard_check(ord("A")))	player_direction = PLAYERDIRECTION.LEFT;

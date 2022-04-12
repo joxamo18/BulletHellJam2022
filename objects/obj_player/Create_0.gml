@@ -2,6 +2,7 @@
 
 basespd = 4;			//default movement speed
 spd = 4;				//current movement speed 
+collision_speed = basespd - 2;
 weapon = 0;				//current weapon
 fire_rate = 10;			//current shooting speed
 uzi_ammo = 20;				//when ammo reaches zero, return to default weapon (unlimited ammo)
@@ -10,7 +11,7 @@ player_direction = PLAYERDIRECTION.UP
 state = PLAYERSTATE.FREE;
 hit_by_attack = ds_list_create();
 slash_speed = 2
-hp = 3
+hp = 50
 
 hit_cooldown_rate = 3;
 hit_cooldown = 0;
