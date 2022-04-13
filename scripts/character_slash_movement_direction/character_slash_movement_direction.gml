@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function character_slash_movement_direction(obj_instance){
 	
-	if (!instance_exists(obj_instance))
+	if (!instance_exists(obj_instance) || obj_instance.object_index == obj_gattling_gun)
 	{
 		return
 	}
@@ -14,7 +14,9 @@ function character_slash_movement_direction(obj_instance){
 			{
 				with (obj_instance) 
 				{
+					path_end();
 					x -= player_slash_speed
+					
 				}
 			}
 			break
@@ -23,7 +25,9 @@ function character_slash_movement_direction(obj_instance){
 			{
 				with (obj_instance) 
 				{
+					path_end();
 					x += player_slash_speed
+					
 				}
 			}
 			break
@@ -32,7 +36,9 @@ function character_slash_movement_direction(obj_instance){
 			{
 				with (obj_instance) 
 				{
+					path_end();
 					y -= player_slash_speed
+					
 				}
 
 			}
@@ -43,7 +49,9 @@ function character_slash_movement_direction(obj_instance){
 			{
 				with (obj_instance) 
 				{
+					path_end();
 					y += player_slash_speed
+					
 				}
 					
 			}
