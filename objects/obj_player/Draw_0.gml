@@ -2,6 +2,7 @@
 // You can write your code in this editor
 draw_self();
 
+
 if (flashAlpha > 0)
 {
 	shader_set(player_hit_flash);

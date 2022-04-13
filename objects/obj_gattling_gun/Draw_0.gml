@@ -17,8 +17,9 @@ direction = point_direction(0, 0, 1, 0)
 
 if (in_combat)
 {
-	draw_sprite_ext(spr_health_background, 1, healthbar_background_x + lengthdir_x(0, direction), healthbar_background_y + lengthdir_y(0, direction), 1, 1, direction, c_yellow, 1)
 
+	draw_sprite_ext(spr_health_background, 1, healthbar_background_x + lengthdir_x(0, direction), healthbar_background_y + lengthdir_y(0, direction), 1, 1, direction, c_yellow, 1)
+	
 	for (var i = 0; i < healthbar_width * (hp / hp_max); i = i + 2)
 	{
 		draw_sprite_ext(spr_health_increment, 1, healthbar_x + lengthdir_x(i, direction), healthbar_y + lengthdir_y(i, direction), 1, 1, direction, c_yellow, 1)

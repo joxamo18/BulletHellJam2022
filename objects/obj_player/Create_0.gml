@@ -26,6 +26,8 @@ enemy_list = [obj_bat, obj_bat_projectile_death, obj_soldier, obj_gattling_gun]
 //able to fire again when cooldown reaches zero (based on weaponspd)
 player_direction = PLAYERDIRECTION.UP
 state = PLAYERSTATE.FREE;
+
+
 enum PLAYERSTATE
 {
 	FREE,
