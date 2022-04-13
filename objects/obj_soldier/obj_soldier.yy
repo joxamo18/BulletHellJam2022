@@ -3,7 +3,7 @@
     "name": "spr_soldier",
     "path": "sprites/spr_soldier/spr_soldier.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,

@@ -4,6 +4,7 @@
     {"id":{"name":"PlayerState_Attack_Combo","path":"scripts/PlayerState_Attack_Combo/PlayerState_Attack_Combo.yy",},"order":0,},
     {"id":{"name":"player_hit_flash","path":"shaders/player_hit_flash/player_hit_flash.yy",},"order":0,},
     {"id":{"name":"bg_tile","path":"sprites/bg_tile/bg_tile.yy",},"order":0,},
+    {"id":{"name":"character_slash_movement_direction","path":"scripts/character_slash_movement_direction/character_slash_movement_direction.yy",},"order":4,},
     {"id":{"name":"spr_player_slash_1_right","path":"sprites/spr_player_slash_1_right/spr_player_slash_1_right.yy",},"order":2,},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":1,},
     {"id":{"name":"HorizontalPath","path":"paths/HorizontalPath/HorizontalPath.yy",},"order":25,},

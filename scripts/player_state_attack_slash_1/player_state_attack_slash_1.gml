@@ -52,6 +52,11 @@ function player_state_attack_slash_1(){
 	}
 
 	mask_index = slash_mask
+	for (var k = 0; k < ds_list_size(hit_by_attack); k++)
+	{
+		var enemy_id = ds_list_find_value(hit_by_attack, k)
+		character_slash_movement_direction(enemy_id)
+	}
 
 	//loop through all enemies and see if hit occurs	
 	for (var j = 0; j < array_length(enemy_list); j++)
@@ -86,6 +91,7 @@ function player_state_attack_slash_1(){
 							instance_destroy(hit_id)
 						}
 					}
+					
 				}
 			}
 		}
