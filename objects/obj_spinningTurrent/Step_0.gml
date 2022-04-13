@@ -133,8 +133,8 @@ if (in_combat) {
 			}
 		}
 	}
-	var move = 1 * movement_speed * _dt
-	y-= move
+	//var move = 1 * movement_speed * _dt
+	//y-= move
 
 }
 

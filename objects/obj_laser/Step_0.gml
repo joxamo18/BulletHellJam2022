@@ -14,7 +14,7 @@ for (i = 0; i < max_length; i++)
 	yEnd = y + lengthdir_y(i, direction);
 	length_laser = i;
 	
-	layerID = layer_get_id("Walls");
+	layerID = layer_get_id("wall_tiles");
 	tiles = layer_tilemap_get_id(layerID)
 	
 	if (collision_point(xEnd, yEnd, obj_player, false, false) || tilemap_get_at_pixel(tiles, xEnd, yEnd))
