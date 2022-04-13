@@ -13,9 +13,7 @@
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1024,"hview":768,"xport":0,"yport":0,"wport":1024,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
   ],
   "layers": [
-    {"instances":[
-        {"properties":[],"isDnd":false,"objectId":{"name":"Object30","path":"objects/Object30/Object30.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":736.0,"y":1824.0,"resourceVersion":"1.0","name":"inst_49FF3F84","tags":[],"resourceType":"GMRInstance",},
-      ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"hude","tags":[],"resourceType":"GMRInstanceLayer",},
+    {"instances":[],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"hude","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"door_tile_set","path":"tilesets/door_tile_set/door_tile_set.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":54,"SerialiseHeight":150,"TileSerialiseData":[
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
@@ -476,6 +474,10 @@
         {"properties":[
             {"propertyId":{"name":"enemy_instance","path":"objects/obj_gattling_gun_trigger/obj_gattling_gun_trigger.yy",},"objectId":{"name":"obj_gattling_gun_trigger","path":"objects/obj_gattling_gun_trigger/obj_gattling_gun_trigger.yy",},"value":"inst_24B27D","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_gattling_gun_trigger","path":"objects/obj_gattling_gun_trigger/obj_gattling_gun_trigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":224.0,"y":864.0,"resourceVersion":"1.0","name":"inst_46177024","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_spinningTurrent","path":"objects/obj_spinningTurrent/obj_spinningTurrent.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":416.0,"y":160.0,"resourceVersion":"1.0","name":"inst_4EFBB13D","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"enemy_instance","path":"objects/obj_boss_trigger/obj_boss_trigger.yy",},"objectId":{"name":"obj_boss_trigger","path":"objects/obj_boss_trigger/obj_boss_trigger.yy",},"value":"inst_4EFBB13D","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"obj_boss_trigger","path":"objects/obj_boss_trigger/obj_boss_trigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":192.0,"y":384.0,"resourceVersion":"1.0","name":"inst_1926E9CC","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":1300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"lay_enemy","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":2368.0,"resourceVersion":"1.0","name":"inst_555C8210","tags":[],"resourceType":"GMRInstance",},
@@ -802,7 +804,8 @@
     {"name":"inst_46177024","path":"rooms/Main/Main.yy",},
     {"name":"inst_154455BF","path":"rooms/Main/Main.yy",},
     {"name":"inst_C0F9DD1","path":"rooms/Main/Main.yy",},
-    {"name":"inst_49FF3F84","path":"rooms/Main/Main.yy",},
+    {"name":"inst_4EFBB13D","path":"rooms/Main/Main.yy",},
+    {"name":"inst_1926E9CC","path":"rooms/Main/Main.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
