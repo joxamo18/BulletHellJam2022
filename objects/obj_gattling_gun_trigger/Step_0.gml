@@ -3,5 +3,6 @@
 
 if (bbox_bottom  > camera_get_view_y(view_camera[0]))
 {
-	enemy_instance.in_combat = true
+	instance_exists(enemy_instance)
+		enemy_instance.in_combat = true
 }

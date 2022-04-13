@@ -2,7 +2,7 @@
 // You can write your code in this editor
 with(other)
 {
-	hp--;
+	hp -= 1.5;
 }
 
 //destroy the bullet

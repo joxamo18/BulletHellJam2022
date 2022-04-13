@@ -2,6 +2,12 @@
 // You can write your code in this editor
 fire_rate = .2
 fire_cooldown = 0
+max_ammo = 20
+ammo = max_ammo
+ammo_reload_rate = 3
+ammo_reload_timer = 0
+
+
 
 hp = 50
 hp_max = hp

@@ -67,6 +67,7 @@ function player_state_attack_slash_1(){
 				if (ds_list_find_index(hit_by_attack, hit_id) == -1)
 				{
 					ds_list_add(hit_by_attack, hit_id)
+					var player_slash_damage = slash_damage
 					with (hit_id)
 					{
 						if (obj_player.uzi_ammo < 20)
@@ -79,7 +80,7 @@ function player_state_attack_slash_1(){
 							obj_player.uzi_ammo += ammo_to_add
 						}
 
-						hp = hp - 5;
+						hp = hp - player_slash_damage;
 						if (hp <= 0)
 						{
 							instance_destroy(hit_id)
