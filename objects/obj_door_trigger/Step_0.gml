@@ -1,5 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+if !instance_exists(obj_player)
+{
+	return
+}
 if (obj_player.y + obj_player.sprite_height < y + sprite_height)
 {
     moving_alpha = clamp(moving_alpha - .05, .1, 1)
