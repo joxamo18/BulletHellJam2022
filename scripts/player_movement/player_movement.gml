@@ -6,12 +6,8 @@ function player_movement(){
 	if (keyboard_check(ord("A")) && place_free(x - spd, y))	x-= spd;
 	if (keyboard_check(ord("D")) && place_free(x + spd, y))	x+= spd;
 	if (keyboard_check(ord("W")) && place_free(x, y - spd))		y-= spd;
-	if (keyboard_check(ord("S")) && place_free(x, y + spd)) {
-		y+= spd;
-	}
-	else {
-	}
-	
+	if (keyboard_check(ord("S")) && place_free(x, y + spd)) y+= spd; 
+
 		//Change player direction state
 	if (keyboard_check(ord("A")))	player_direction = PLAYERDIRECTION.LEFT;
 	if (keyboard_check(ord("D")))	player_direction = PLAYERDIRECTION.RIGHT;

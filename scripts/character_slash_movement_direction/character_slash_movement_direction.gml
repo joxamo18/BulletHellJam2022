@@ -15,7 +15,7 @@ function character_slash_movement_direction(obj_instance){
 				with (obj_instance) 
 				{
 					path_end();
-					x -= player_slash_speed
+					x -= player_slash_speed + 2
 					
 				}
 			}
@@ -26,7 +26,7 @@ function character_slash_movement_direction(obj_instance){
 				with (obj_instance) 
 				{
 					path_end();
-					x += player_slash_speed
+					x += player_slash_speed + 2
 					
 				}
 			}
@@ -37,7 +37,7 @@ function character_slash_movement_direction(obj_instance){
 				with (obj_instance) 
 				{
 					path_end();
-					y -= player_slash_speed
+					y -= player_slash_speed + 2
 					
 				}
 
@@ -50,7 +50,7 @@ function character_slash_movement_direction(obj_instance){
 				with (obj_instance) 
 				{
 					path_end();
-					y += player_slash_speed
+					y += player_slash_speed + 2
 					
 				}
 					

@@ -1,7 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
-with(other)
+
+if (deflected == true)
 {
-	hp -= 3;
+	show_debug_message("is deflected from gattling gun")
+	with(other)
+	{
+		hp -= 3;
+	}
+	instance_destroy(self)
 }
-instance_destroy(self)

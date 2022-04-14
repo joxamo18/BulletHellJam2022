@@ -73,8 +73,7 @@ function player_state_attack_slash_1(){
 				{
 					ds_list_add(hit_by_attack, hit_id)
 					var player_slash_damage = slash_damage
-					var player_x = x
-					var player_y = y
+
 					with (hit_id)
 					{
 

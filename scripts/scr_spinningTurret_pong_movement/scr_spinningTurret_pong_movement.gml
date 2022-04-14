@@ -67,7 +67,6 @@ function scr_spinningTurret_pong_movement(){
 		}
 		else 
 		{
-			show_debug_message("hit bottom")
 			y_direction = y_direction * -1;
 		}
 	}

@@ -1,6 +1,12 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function player_state_free(){
+	
+	if (mouse_check_button(mb_right)) {
+		show_debug_message("hey")
+		state = PLAYERSTATE.ATTACK_SLASH_1
+	}
+	
 	//Fire when pressing the left mouse button
 	if (mouse_check_button(mb_left)) 
 	{
@@ -34,7 +40,7 @@ function player_state_free(){
 
 	player_movement()	
 	
-	if (mouse_check_button(mb_right)) state = PLAYERSTATE.ATTACK_SLASH_1
+	
 	
 	//angle sprite towards mouse cursor
 	//image_angle = point_direction(x,y,mouse_x,mouse_y);

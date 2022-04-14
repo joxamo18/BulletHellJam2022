@@ -17,3 +17,5 @@
 		}
 		instance_destroy(self)
 	}
+	
+	collision_check()
