@@ -8,10 +8,8 @@ function player_movement(){
 	if (keyboard_check(ord("W")) && place_free(x, y - spd))		y-= spd;
 	if (keyboard_check(ord("S")) && place_free(x, y + spd)) {
 		y+= spd;
-		show_debug_message("going down")
 	}
 	else {
-		show_debug_message("cant")
 	}
 	
 		//Change player direction state

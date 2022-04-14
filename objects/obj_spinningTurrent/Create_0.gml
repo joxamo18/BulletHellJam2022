@@ -4,7 +4,13 @@
 
 rotation_speed = 5
 laser_rotation_speed = 1
-movement_speed = (room_height - camera_get_view_height(view_camera[0])) / audio_sound_length(panthress)
+movement_speed_x = 32
+movement_speed_y = 32
+x_direction = 1
+y_direction = 1
+centerX = 0
+centerY = 0
+_dt = 0
 
 fire_rate = 0.2
 fire_cooldown = 0
@@ -23,7 +29,10 @@ beam_firing_cooldown = max_beam_firing_cooldown
 max_beam_firing_timer = 10
 beam_firing_timer = max_beam_firing_timer
 
-PROJECTILE_FIRING = "projectile_firing"
-PROJECTILE_BEAM = "beam_firing"
-current_state = PROJECTILE_BEAM
+rotationDirection = ""
+current_state = TURRET_STATE.PROJECTILE_FIRING
 
+enum TURRET_STATE {
+	PROJECTILE_FIRING,
+	PROJECTILE_BEAM
+}

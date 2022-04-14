@@ -29,8 +29,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "SpinningTurret",
+    "path": "folders/Enemies/SpinningTurret.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_spinningTurrent",
