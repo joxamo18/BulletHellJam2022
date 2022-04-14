@@ -132,8 +132,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Main","path":"rooms/Main/Main.yy",},},
     {"roomId":{"name":"SpinningTurretTestRoom","path":"rooms/SpinningTurretTestRoom/SpinningTurretTestRoom.yy",},},
+    {"roomId":{"name":"Main","path":"rooms/Main/Main.yy",},},
     {"roomId":{"name":"SoldierTestRoom","path":"rooms/SoldierTestRoom/SoldierTestRoom.yy",},},
     {"roomId":{"name":"GattlingGunTestRoom","path":"rooms/GattlingGunTestRoom/GattlingGunTestRoom.yy",},},
     {"roomId":{"name":"BatTestRoom","path":"rooms/BatTestRoom/BatTestRoom.yy",},},

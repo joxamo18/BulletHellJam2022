@@ -24,7 +24,7 @@ function turret_state_projectile_firing(){
 			with (bullet)
 			{
 				direction = desiredAngle + 85
-				speed = 10
+				speed = 5
 			}
 		}
 	

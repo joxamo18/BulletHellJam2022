@@ -1,6 +1,20 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function turret_state_projectile_beam(){
+
+	var vX = center_of_field.x - x
+	var vY = center_of_field.y - y
+	
+	var length = sqrt((vX * vX) + (vY * vY));
+	
+	vX = vX / length
+	vY = vY / length
+	
+
+	
+	x += vX * movement_speed_x * _dt
+	y += vY * movement_speed_y * _dt
+
 	if !(instance_exists(obj_laser))
 	{
 		for (var i = 0; i < array_length(turretsB); i++)
