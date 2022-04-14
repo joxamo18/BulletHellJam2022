@@ -24,6 +24,14 @@ for (i = 0; i < max_length; i++)
 		var centerY = yEnd-sprite_get_yoffset(spr_particle_orange)+(sprite_get_height(spr_particle_orange)/2)
 		part_particles_create(obj_part_setup.particleSystem, centerX, centerY, obj_part_setup.particleType_Hit, 1)
 		part_particles_create(obj_part_setup.particleSystem, centerX, centerY, obj_part_setup.particleType_Spark, 10)
+		
+		if collision_point(xEnd, yEnd, obj_player, false, false)
+		{
+			with(obj_player)
+			{
+				state = PLAYERSTATE.TAKING_DAMAGE;
+			}
+		}
 		break;
 	}
 }

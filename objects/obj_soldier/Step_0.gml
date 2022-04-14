@@ -21,10 +21,12 @@ if (ammo_reload_timer > 0)
 if (fire_cooldown <= 0 && can_fire && ammo > 0)
 {
 	var bullets = instance_create_layer(x,y,"lay_bullets", obj_enemyBullet)
+	var creator_id = id;
 	with (bullets)
 	{
 		direction = point_direction(x , y, obj_player.x, obj_player.y)
 		speed = 7
+		object_who_spawned_me = creator_id
 	}
 	ammo--;
 	if (ammo == 0)

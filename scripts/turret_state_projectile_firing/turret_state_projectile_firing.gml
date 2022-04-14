@@ -20,11 +20,12 @@ function turret_state_projectile_firing(){
 			var v1 = point_direction(centerX, centerY, centerX, centerY - 5)
 			var v2 = point_direction(centerX, centerY, new_x, new_y)
 			var desiredAngle = angle_difference(v2, v1)
-	
+			var creator_id = id;
 			with (bullet)
 			{
 				direction = desiredAngle + 85
 				speed = 5
+				object_who_spawned_me = creator_id
 			}
 		}
 	

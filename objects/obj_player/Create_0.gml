@@ -21,7 +21,7 @@ player_hit_freeze = hit_cooldown_rate - 0.2;
 flashAlpha = 0;
 flashColor = c_white;
 
-enemy_list = [obj_bat, obj_bat_projectile_death, obj_soldier, obj_gattling_gun]
+enemy_list = [obj_bat, obj_bat_projectile_death, obj_soldier, obj_gattling_gun, obj_enemyBullet]
 
 //able to fire again when cooldown reaches zero (based on weaponspd)
 player_direction = PLAYERDIRECTION.UP

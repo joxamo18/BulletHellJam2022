@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+hp = 200
+hp_max = hp
+
+healthbar_width = 200
 
 rotation_speed = 5
 laser_rotation_speed = 1

@@ -73,8 +73,11 @@ function player_state_attack_slash_1(){
 				{
 					ds_list_add(hit_by_attack, hit_id)
 					var player_slash_damage = slash_damage
+					var player_x = x
+					var player_y = y
 					with (hit_id)
 					{
+
 						if (obj_player.uzi_ammo < 20)
 						{
 							var ammo_to_add = 5
@@ -83,6 +86,16 @@ function player_state_attack_slash_1(){
 								ammo_to_add = 20 - obj_player.uzi_ammo;
 							}
 							obj_player.uzi_ammo += ammo_to_add
+						}
+						
+						if (object_index == obj_enemyBullet)
+						{
+							show_debug_message("hit bullet")
+								deflected = true
+								direction = point_direction(x,y,mouse_x,mouse_y)
+								speed = 15
+						
+							break
 						}
 
 						hp = hp - player_slash_damage;
