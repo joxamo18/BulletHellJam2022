@@ -36,14 +36,10 @@ if (global.gamestate == "start")
 	draw_text(
 		camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,
 		camera_get_view_y(view_camera[0])+camera_get_view_width(view_camera[0])/2,"Press Enter");
+
 }
 
 	
 
 
 
-if (keyboard_check(vk_enter) && global.gamestate == "start")
-{
-	audio_play_sound(panthress, 0, false);
-	global.gamestate = "main_level";
-}
