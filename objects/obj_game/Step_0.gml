@@ -14,6 +14,7 @@ if (keyboard_check(vk_enter) && global.gamestate == "start")
 
 if (global.gamestate == "intro")
 {	
+
 	with (obj_player)
 	{
 		state = PLAYERSTATE.GAME_CONTROLLED
@@ -52,3 +53,5 @@ if (global.gamestate == "boss_intro")
 		}
 	}
 }
+
+show_debug_message(camera_get_view_y(view_camera[0]))

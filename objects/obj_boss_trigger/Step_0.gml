@@ -9,8 +9,14 @@ if (instance_exists(obj_player) and bbox_bottom  > obj_player.bbox_top)
 	}
 	with (obj_game)
 	{
-		warning_sound = audio_play_sound(snd_warning, 0, true);
+		warning_sound = audio_play_sound(snd_warning, 0, false);
 		player_moving_forward = true
+	}
+	
+	with (obj_camera)
+	{
+		movespd = camera_get_view_y(view_camera[0]) / audio_sound_length(snd_warning)
+		deltaTimeCounter = 0;
 	}
 	instance_destroy()
 }
