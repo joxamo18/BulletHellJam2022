@@ -39,7 +39,23 @@ if (global.gamestate == "start")
 
 }
 
+if (global.gamestate == "boss_intro")
+{
+	draw_set_alpha(warning_alpha);
+	draw_sprite(
+		spr_warning, 
+		0, 
+		camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,
+		camera_get_view_y(view_camera[0])+camera_get_view_width(view_camera[0])/4
+	);
 	
+	warning_alpha -= .75 * (delta_time / 1000000)
+	if (warning_alpha <= 0)
+	{
+		warning_alpha = 1
+	}
+	draw_set_alpha(1);
+}
 
 
 

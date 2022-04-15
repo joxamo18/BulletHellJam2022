@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "BulletHellJam",
-    "path": "BulletHellJam.yyp",
+    "name": "Main",
+    "path": "folders/Rooms/Main.yy",
   },
   "resourceVersion": "1.0",
   "name": "Sprite41",

@@ -38,6 +38,7 @@ if (global.gamestate == "boss_intro")
 		
 		if (boss_warning_timer <= 0)
 		{
+			audio_sound_gain(warning_sound, 0, 1000);
 			global.gamestate = "boss_fight"
 			with (obj_player)
 			{

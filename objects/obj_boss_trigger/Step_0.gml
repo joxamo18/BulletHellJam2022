@@ -9,6 +9,7 @@ if (instance_exists(obj_player) and bbox_bottom  > obj_player.bbox_top)
 	}
 	with (obj_game)
 	{
+		warning_sound = audio_play_sound(snd_warning, 0, true);
 		player_moving_forward = true
 	}
 	instance_destroy()
