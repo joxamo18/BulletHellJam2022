@@ -13,7 +13,7 @@ hit_by_attack = ds_list_create();
 slash_speed = 2
 slash_damage = 3;
 
-hp = 50
+hp = 3
 
 hit_cooldown_rate = 2;
 hit_cooldown = 0;
@@ -34,7 +34,8 @@ enum PLAYERSTATE
 	ATTACK_SLASH_1,
 	ATTACK_COMBO,
 	TAKING_DAMAGE,
-	GAME_CONTROLLED
+	GAME_CONTROLLED,
+	KNOCKED_BACK
 }
 
 enum PLAYERDIRECTION

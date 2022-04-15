@@ -13,7 +13,7 @@
 	{
 		with(obj_player)
 		{
-			state = PLAYERSTATE.TAKING_DAMAGE;
+			player_state_taking_damage()
 		}
 		instance_destroy(self)
 	}

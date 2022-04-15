@@ -2,5 +2,5 @@
 // You can write your code in this editor
 with (other)
 {
-	state = PLAYERSTATE.TAKING_DAMAGE
+	player_state_taking_damage()
 }

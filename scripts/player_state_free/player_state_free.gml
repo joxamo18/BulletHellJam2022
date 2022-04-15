@@ -3,7 +3,6 @@
 function player_state_free(){
 	
 	if (mouse_check_button(mb_right)) {
-		show_debug_message("hey")
 		state = PLAYERSTATE.ATTACK_SLASH_1
 	}
 	
