@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite40",
-    "path": "sprites/Sprite40/Sprite40.yy",
+    "name": "spr_boss_trigger",
+    "path": "sprites/spr_boss_trigger/spr_boss_trigger.yy",
   },
   "solid": false,
   "visible": true,
@@ -28,8 +28,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "SpinningTurret",
+    "path": "folders/Enemies/SpinningTurret.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_boss_trigger",

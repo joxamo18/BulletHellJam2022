@@ -68,6 +68,7 @@
         {"properties":[
             {"propertyId":{"name":"spawner","path":"objects/obj_trigger/obj_trigger.yy",},"objectId":{"name":"obj_trigger","path":"objects/obj_trigger/obj_trigger.yy",},"value":"inst_31CDE26D","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_trigger","path":"objects/obj_trigger/obj_trigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":896.0,"y":4640.0,"resourceVersion":"1.0","name":"inst_718B875","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_player_starting_position_boss","path":"objects/obj_player_starting_position_boss/obj_player_starting_position_boss.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":2208.0,"resourceVersion":"1.0","name":"inst_5DBF11EA","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"lay_player","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"lay_bullets","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
@@ -283,6 +284,7 @@
     {"name":"inst_62E2FFBF","path":"rooms/SoldierTestRoom/SoldierTestRoom.yy",},
     {"name":"inst_718B875","path":"rooms/SoldierTestRoom/SoldierTestRoom.yy",},
     {"name":"inst_4D8199EA","path":"rooms/SoldierTestRoom/SoldierTestRoom.yy",},
+    {"name":"inst_5DBF11EA","path":"rooms/SoldierTestRoom/SoldierTestRoom.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

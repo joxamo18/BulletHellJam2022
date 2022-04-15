@@ -13,7 +13,7 @@ hit_by_attack = ds_list_create();
 slash_speed = 2
 slash_damage = 3;
 
-hp = 3
+hp = 50
 
 hit_cooldown_rate = 2;
 hit_cooldown = 0;

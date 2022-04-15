@@ -20,3 +20,33 @@ if (global.gamestate == "intro")
 		y -= spd 
 	}
 }
+
+if (global.gamestate == "boss_intro")
+{
+	if (player_moving_forward)
+	{
+		with (obj_player)
+		{
+			y -= 16 * delta_time / 1000000
+		}
+	}
+	
+	if (start_boss_warning_timer && boss_warning_timer > 0)
+	{
+		boss_warning_timer -= delta_time / 1000000
+		
+		if (boss_warning_timer <= 0)
+		{
+			global.gamestate = "boss_fight"
+			with (obj_player)
+			{
+				state = PLAYERSTATE.FREE
+			}
+			
+			with (obj_spinningTurrent)
+			{
+				in_combat = true
+			}
+		}
+	}
+}

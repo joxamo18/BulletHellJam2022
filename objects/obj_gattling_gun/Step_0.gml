@@ -38,4 +38,8 @@ else
 	fire_cooldown -= _dt
 }
 
+if (hp == 0)
+{
+	instance_destroy()
+}
 

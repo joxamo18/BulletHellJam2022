@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "Sprite41",
-    "path": "sprites/Sprite41/Sprite41.yy",
+    "name": "Sprite42",
+    "path": "sprites/Sprite42/Sprite42.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -21,17 +21,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Main",
+    "path": "folders/Rooms/Main.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_game_event_trigger",
+  "name": "obj_player_starting_position_boss",
   "tags": [],
   "resourceType": "GMObject",
 }

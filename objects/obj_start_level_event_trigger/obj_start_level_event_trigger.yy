@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite39",
-    "path": "sprites/Sprite39/Sprite39.yy",
+    "name": "Sprite41",
+    "path": "sprites/Sprite41/Sprite41.yy",
   },
   "solid": false,
   "visible": false,
@@ -24,16 +24,14 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
-  "properties": [
-    {"varType":5,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"shader_to_use","tags":[],"resourceType":"GMObjectProperty",},
-  ],
+  "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Main",
     "path": "folders/Rooms/Main.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_door_trigger",
+  "name": "obj_start_level_event_trigger",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -332,7 +332,8 @@
         {"properties":[
             {"propertyId":{"name":"shader_to_use","path":"objects/obj_door_trigger/obj_door_trigger.yy",},"objectId":{"name":"obj_door_trigger","path":"objects/obj_door_trigger/obj_door_trigger.yy",},"value":"sh_invicible_tiles_room_2","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_door_trigger","path":"objects/obj_door_trigger/obj_door_trigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":416.0,"y":448.0,"resourceVersion":"1.0","name":"inst_C0F9DD1","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_game_event_trigger","path":"objects/obj_game_event_trigger/obj_game_event_trigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":416.0,"y":2208.0,"resourceVersion":"1.0","name":"inst_44F2DB43","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_start_level_event_trigger","path":"objects/obj_start_level_event_trigger/obj_start_level_event_trigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":416.0,"y":2208.0,"resourceVersion":"1.0","name":"inst_44F2DB43","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_player_starting_position_boss","path":"objects/obj_player_starting_position_boss/obj_player_starting_position_boss.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":416.0,"y":304.0,"resourceVersion":"1.0","name":"inst_FD2AF50","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"lay_player","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[
@@ -474,7 +475,7 @@
           ],"isDnd":false,"objectId":{"name":"obj_spinningTurrent","path":"objects/obj_spinningTurrent/obj_spinningTurrent.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":432.0,"y":160.0,"resourceVersion":"1.0","name":"inst_4EFBB13D","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
             {"propertyId":{"name":"enemy_instance","path":"objects/obj_boss_trigger/obj_boss_trigger.yy",},"objectId":{"name":"obj_boss_trigger","path":"objects/obj_boss_trigger/obj_boss_trigger.yy",},"value":"inst_4EFBB13D","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-          ],"isDnd":false,"objectId":{"name":"obj_boss_trigger","path":"objects/obj_boss_trigger/obj_boss_trigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":192.0,"y":384.0,"resourceVersion":"1.0","name":"inst_1926E9CC","tags":[],"resourceType":"GMRInstance",},
+          ],"isDnd":false,"objectId":{"name":"obj_boss_trigger","path":"objects/obj_boss_trigger/obj_boss_trigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":416.0,"y":416.0,"resourceVersion":"1.0","name":"inst_1926E9CC","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_enemy_goal","path":"objects/obj_enemy_goal/obj_enemy_goal.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":416.0,"y":208.0,"resourceVersion":"1.0","name":"inst_5500A8AE","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"lay_enemy","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
@@ -893,6 +894,7 @@
     {"name":"inst_526006AD","path":"rooms/Main/Main.yy",},
     {"name":"inst_5500A8AE","path":"rooms/Main/Main.yy",},
     {"name":"inst_44F2DB43","path":"rooms/Main/Main.yy",},
+    {"name":"inst_FD2AF50","path":"rooms/Main/Main.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -916,8 +918,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "Main",
+    "path": "folders/Rooms/Main.yy",
   },
   "resourceVersion": "1.0",
   "name": "Main",

@@ -3,5 +3,7 @@
 global.myscore = 0;
 global.gamestate = "start"
 
-intro_movement_timer = 1;
+player_moving_forward = false
 
+start_boss_warning_timer = false
+boss_warning_timer = 3
