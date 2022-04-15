@@ -29,7 +29,7 @@ for (i = 0; i < max_length; i++)
 		{
 			with(obj_player)
 			{
-				state = PLAYERSTATE.TAKING_DAMAGE;
+				player_state_taking_damage();
 			}
 		}
 		break;

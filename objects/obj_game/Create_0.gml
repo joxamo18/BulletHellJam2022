@@ -7,3 +7,5 @@ player_moving_forward = false
 
 start_boss_warning_timer = false
 boss_warning_timer = 3
+
+main_theme_song = ""

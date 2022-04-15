@@ -3,7 +3,7 @@
 
 if (keyboard_check(vk_enter) && global.gamestate == "start")
 {
-	audio_play_sound(panthress, 0, false);
+	main_theme_song = audio_play_sound(snd_main_level_theme, 0, false);
 	global.gamestate = "intro";
 	with (obj_player)
 	{
@@ -23,6 +23,7 @@ if (global.gamestate == "intro")
 
 if (global.gamestate == "boss_intro")
 {
+    audio_sound_gain(main_theme_song, 0, 1000);
 	if (player_moving_forward)
 	{
 		with (obj_player)
