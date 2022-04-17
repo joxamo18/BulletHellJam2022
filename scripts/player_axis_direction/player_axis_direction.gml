@@ -7,11 +7,12 @@ function player_axis_direction(){
 	{
 		if (keyboard_check(ord("S")) || keyboard_check(ord("W"))) //aiming forward
 		{
+
 			sprite_index = spr_player_face_up_walk_u_d
 		}
-	
 		else if (keyboard_check(ord("A")) || keyboard_check(ord("D")))
 		{
+
 			sprite_index = spr_player_face_up_walk_l_r
 		}
 		else
@@ -24,41 +25,85 @@ function player_axis_direction(){
 	{
 		if (keyboard_check(ord("S")) || keyboard_check(ord("W")))
 		{
-			sprite_index = spr_player_face_left_walk_u_d
+			if (mouse_check_button(mb_left))
+			{
+				sprite_index = spr_player_face_left_walk_u_d_AIMING
+			}
+			else sprite_index = spr_player_face_left_walk_u_d
 		}
 	
 		else if (keyboard_check(ord("A")) || keyboard_check(ord("D")))
 		{
-			sprite_index = spr_player_face_left_walk_l_r
+			if (mouse_check_button(mb_left))
+			{
+				sprite_index = spr_player_face_left_walk_l_r_AIMING
+			}
+			else sprite_index = spr_player_face_left_walk_l_r
 		}
-		else sprite_index = spr_player_face_left_idle
+		else 
+		{
+			if (mouse_check_button(mb_left))
+			{
+				sprite_index = spr_player_face_left_idle_AIMING
+			}
+			else sprite_index = spr_player_face_left_idle
+		}
 		return
 	}
 	else if (mouse_direction >= 225 and mouse_direction < 315) //aiming down
 	{
 		if (keyboard_check(ord("S")) || keyboard_check(ord("W")))
 		{
-			sprite_index = spr_player_face_down_walk_u_d
+			if (mouse_check_button(mb_left))
+			{
+				sprite_index = spr_player_face_down_walk_u_d_AIMING
+			}
+			else sprite_index = spr_player_face_down_walk_u_d
 		}
 	
 		else if (keyboard_check(ord("A")) || keyboard_check(ord("D")))
 		{
-			sprite_index = spr_player_face_down_walk_l_r
+			if (mouse_check_button(mb_left))
+			{
+				sprite_index = spr_player_face_down_walk_l_r_AIMING
+			}
+			else sprite_index = spr_player_face_down_walk_l_r
 		}
-		else sprite_index = spr_player_face_down_idle
+		else
+		{
+			if (mouse_check_button(mb_left))
+			{
+				sprite_index = spr_player_face_down_idle_AIMING
+			}
+			else sprite_index = spr_player_face_down_idle
+		}
 		return
 	}
 	else { //aiming right
 		if (keyboard_check(ord("S")) || keyboard_check(ord("W")))
 		{
-			sprite_index = spr_player_face_right_walk_u_d
+			if (mouse_check_button(mb_left))
+			{
+				sprite_index = spr_player_face_right_walk_u_d_AIMING
+			}
+			else sprite_index = spr_player_face_right_walk_u_d
 		}
 	
 		else if (keyboard_check(ord("A")) || keyboard_check(ord("D")))
 		{
-			sprite_index = spr_player_face_right_walk_l_r
+			if (mouse_check_button(mb_left))
+			{
+				sprite_index = spr_player_face_right_walk_l_r_AIMING
+			}
+			else sprite_index = spr_player_face_right_walk_l_r
 		}
-		else sprite_index = spr_player_face_right_idle
+		else {
+			if (mouse_check_button(mb_left))
+			{
+				sprite_index = spr_player_face_right_idle_AIMING
+			}
+			else sprite_index = spr_player_face_right_idle
+		}
 		return
 	}
 
