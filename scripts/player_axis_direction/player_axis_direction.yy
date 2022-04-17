@@ -6,7 +6,7 @@
     "path": "folders/player/player_scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "player_game_controlled_movement",
+  "name": "player_axis_direction",
   "tags": [],
   "resourceType": "GMScript",
 }

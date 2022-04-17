@@ -1,4 +1,4 @@
-if (global.gamestate == "start")
+if (global and global.gamestate == "start")
 {
 	return
 }

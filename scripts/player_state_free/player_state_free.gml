@@ -1,6 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function player_state_free(){
+
 	
 	if (mouse_check_button(mb_right)) {
 		state = PLAYERSTATE.ATTACK_SLASH_1
@@ -38,7 +39,7 @@ function player_state_free(){
 	if (cooldown > 0) cooldown--; 
 
 	player_movement()	
-	
+	player_axis_direction()
 	
 	
 	//angle sprite towards mouse cursor
