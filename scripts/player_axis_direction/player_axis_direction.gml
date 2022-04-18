@@ -17,7 +17,11 @@ function player_axis_direction(){
 		}
 		else
 		{
-			sprite_index = spr_player_face_up_idle
+			if (mouse_check_button(mb_left)) 
+			{
+				sprite_index = spr_player_face_up_idle_AIMING
+			}
+			else sprite_index = spr_player_face_up_idle
 		}
 		return
 	}

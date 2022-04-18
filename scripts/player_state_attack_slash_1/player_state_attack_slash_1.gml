@@ -6,6 +6,7 @@
 function player_state_attack_slash_1(){
 	var slash_sprite = spr_player_slash_1_up
 	var slash_mask = spr_player_slash_1_up_hb
+	var prev_mask = mask_index
 
 	switch (player_direction)
 	{
@@ -110,5 +111,5 @@ function player_state_attack_slash_1(){
 		ds_list_destroy(hit_by_attack_now)
 	}
 	
-	mask_index = spr_player
+	mask_index = prev_mask
 }
