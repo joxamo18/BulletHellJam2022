@@ -27,7 +27,15 @@ function player_state_attack_slash_1(){
 			}
 			break
 		case PLAYERDIRECTION.UP:
-			slash_sprite = spr_player_slash_1_up
+			if (current_slash == 2)
+			{
+				slash_sprite = spr_player_slash_1_up
+			}
+			else 
+			{
+				slash_sprite = spr_player_slash_2_up
+			}
+				
 			slash_mask = spr_player_slash_1_up_hb
 			if (place_free(x, y - slash_speed))
 			{
@@ -36,7 +44,15 @@ function player_state_attack_slash_1(){
 
 			break
 		case PLAYERDIRECTION.DOWN:
-			slash_sprite = spr_player_slash_1_down
+			if (current_slash == 2)
+			{
+				slash_sprite = spr_player_slash_1_down
+			}
+			else 
+			{
+				slash_sprite = spr_player_slash_2_down
+			}
+				
 			slash_mask = spr_player_slash_1_down_hb
 			if (place_free(x, y + slash_speed))
 			{

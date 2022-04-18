@@ -111,8 +111,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "slash_attack",
-    "path": "folders/player/player_sprites/slash_attack.yy",
+    "name": "slash_attack_1",
+    "path": "folders/player/player_sprites/slash_attack_1.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_slash_1_down_hb",
