@@ -33,8 +33,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "FootSoldier",
+    "path": "folders/Enemies/FootSoldier.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_soldier",
