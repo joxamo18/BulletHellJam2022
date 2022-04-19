@@ -135,7 +135,6 @@ function player_state_attack_slash_1(){
 						
 						if (object_index == obj_enemyBullet)
 						{
-							show_debug_message("hit bullet")
 								deflected = true
 								direction = point_direction(x,y,mouse_x,mouse_y)
 								speed = 15
