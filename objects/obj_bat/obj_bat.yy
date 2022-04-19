@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Bats",
+    "path": "folders/Enemies/Bats.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bat",
