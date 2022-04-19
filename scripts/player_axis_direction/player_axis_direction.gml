@@ -5,6 +5,7 @@ function player_axis_direction(){
 	
 	if (mouse_direction >= 45 and mouse_direction < 135)
 	{
+		player_direction = PLAYERDIRECTION.UP
 		if (keyboard_check(ord("S")) || keyboard_check(ord("W"))) //aiming forward
 		{
 
@@ -27,6 +28,7 @@ function player_axis_direction(){
 	}
 	else if (mouse_direction >= 135 and mouse_direction < 225) //aiming left
 	{
+		player_direction = PLAYERDIRECTION.LEFT
 		if (keyboard_check(ord("S")) || keyboard_check(ord("W")))
 		{
 			if (mouse_check_button(mb_left))
@@ -56,6 +58,7 @@ function player_axis_direction(){
 	}
 	else if (mouse_direction >= 225 and mouse_direction < 315) //aiming down
 	{
+		player_direction = PLAYERDIRECTION.DOWN
 		if (keyboard_check(ord("S")) || keyboard_check(ord("W")))
 		{
 			if (mouse_check_button(mb_left))
@@ -84,6 +87,7 @@ function player_axis_direction(){
 		return
 	}
 	else { //aiming right
+		player_direction = PLAYERDIRECTION.RIGHT
 		if (keyboard_check(ord("S")) || keyboard_check(ord("W")))
 		{
 			if (mouse_check_button(mb_left))

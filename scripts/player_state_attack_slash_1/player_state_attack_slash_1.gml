@@ -7,7 +7,14 @@ function player_state_attack_slash_1(){
 	var slash_sprite = spr_player_slash_1_up
 	var slash_mask = spr_player_slash_1_up_hb
 	var prev_mask = mask_index
+	
+	var v_x = mouse_x - x
+	var v_y = mouse_y - y
+	var v_length = sqrt(sqr(v_x) + sqr(v_y))
 
+	v_x = v_x / v_length
+	v_y = v_y / v_length
+	
 	switch (player_direction)
 	{
 		case PLAYERDIRECTION.LEFT:
@@ -20,10 +27,11 @@ function player_state_attack_slash_1(){
 				slash_sprite = spr_player_slash_2_left
 			}
 			slash_mask = spr_player_slash_1_left_hb
-			if (place_free(x - slash_speed, y))
-			{
-				x -= slash_speed
-			}
+			//if (place_free(x - slash_speed, y))
+			//{
+			//	x = x + v_x * slash_speed
+			//	y = y + v_y * slash_speed
+			//}
 			break
 		case PLAYERDIRECTION.RIGHT:
 			if (current_slash == 2)
@@ -35,11 +43,11 @@ function player_state_attack_slash_1(){
 				slash_sprite = spr_player_slash_2_right
 			}
 
-			slash_mask = spr_player_slash_1_right_hb
-			if (place_free(x + slash_speed, y))
-			{
-				x += slash_speed
-			}
+			//slash_mask = spr_player_slash_1_right_hb
+			//if (place_free(x + slash_speed, y))
+			//{
+			//	x += slash_speed
+			//}
 			break
 		case PLAYERDIRECTION.UP:
 			if (current_slash == 2)
@@ -52,10 +60,10 @@ function player_state_attack_slash_1(){
 			}
 				
 			slash_mask = spr_player_slash_1_up_hb
-			if (place_free(x, y - slash_speed))
-			{
-				y -= slash_speed
-			}
+			//if (place_free(x, y - slash_speed))
+			//{
+			//	y -= slash_speed
+			//}
 
 			break
 		case PLAYERDIRECTION.DOWN:
@@ -69,11 +77,17 @@ function player_state_attack_slash_1(){
 			}
 				
 			slash_mask = spr_player_slash_1_down_hb
-			if (place_free(x, y + slash_speed))
-			{
-				y += slash_speed
-			}
+			//if (place_free(x, y + slash_speed))
+			//{
+			//	y += slash_speed
+			//}
 			break
+	}
+	
+	if (place_free(x + v_x * slash_speed, y + v_y * slash_speed))
+	{
+		x = x + v_x * slash_speed
+		y = y + v_y * slash_speed
 	}
 
 	if (sprite_index != slash_sprite)
