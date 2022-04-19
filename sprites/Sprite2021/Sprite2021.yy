@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Sprite2021","path":"sprites/Sprite2021/Sprite2021.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Sprite20",
     "tags": [],
     "resourceType": "GMSequence",

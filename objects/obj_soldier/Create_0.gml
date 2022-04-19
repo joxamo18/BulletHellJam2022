@@ -16,4 +16,9 @@ path = path_add()
 target_x = soldier_goal.x
 target_y = soldier_goal.y
 
+goal_reached = false
+arm_instance = false
+
+sprite_index = spr_soldier_walking_down
+
 alarm[0] = 1

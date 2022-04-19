@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_face_right_walk_u_d","path":"sprites/spr_player_face_right_walk_u_d/spr_player_face_right_walk_u_d.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_face_right_walk_u_d",
     "tags": [],
     "resourceType": "GMSequence",

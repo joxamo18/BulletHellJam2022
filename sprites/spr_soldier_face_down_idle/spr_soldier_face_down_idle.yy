@@ -2,7 +2,7 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 0,
+  "origin": 4,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e5a8425a-4579-4e3d-993a-2cea583ce63a","path":"sprites/spr_soldier/spr_soldier.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e5a8425a-4579-4e3d-993a-2cea583ce63a","path":"sprites/spr_soldier/spr_soldier.yy",},"LayerId":{"name":"60efa827-a6ea-4fa4-95e2-254096577db3","path":"sprites/spr_soldier/spr_soldier.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_soldier","path":"sprites/spr_soldier/spr_soldier.yy",},"resourceVersion":"1.0","name":"e5a8425a-4579-4e3d-993a-2cea583ce63a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e5a8425a-4579-4e3d-993a-2cea583ce63a","path":"sprites/spr_soldier_face_down_idle/spr_soldier_face_down_idle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e5a8425a-4579-4e3d-993a-2cea583ce63a","path":"sprites/spr_soldier_face_down_idle/spr_soldier_face_down_idle.yy",},"LayerId":{"name":"60efa827-a6ea-4fa4-95e2-254096577db3","path":"sprites/spr_soldier_face_down_idle/spr_soldier_face_down_idle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_soldier_face_down_idle","path":"sprites/spr_soldier_face_down_idle/spr_soldier_face_down_idle.yy",},"resourceVersion":"1.0","name":"e5a8425a-4579-4e3d-993a-2cea583ce63a","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_soldier","path":"sprites/spr_soldier/spr_soldier.yy",},
+    "spriteId": {"name":"spr_soldier_face_down_idle","path":"sprites/spr_soldier_face_down_idle/spr_soldier_face_down_idle.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4e76db43-9ecc-4552-babf-a475951ad7bb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e5a8425a-4579-4e3d-993a-2cea583ce63a","path":"sprites/spr_soldier/spr_soldier.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4e76db43-9ecc-4552-babf-a475951ad7bb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e5a8425a-4579-4e3d-993a-2cea583ce63a","path":"sprites/spr_soldier_face_down_idle/spr_soldier_face_down_idle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -54,13 +54,13 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 0,
-    "yorigin": 0,
+    "xorigin": 16,
+    "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_soldier","path":"sprites/spr_soldier/spr_soldier.yy",},
-    "resourceVersion": "1.3",
-    "name": "spr_soldier",
+    "parent": {"name":"spr_soldier_face_down_idle","path":"sprites/spr_soldier_face_down_idle/spr_soldier_face_down_idle.yy",},
+    "resourceVersion": "1.4",
+    "name": "spr_soldier_face_down_idle",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -69,11 +69,11 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "BulletHellJam",
-    "path": "BulletHellJam.yyp",
+    "name": "Sprites",
+    "path": "folders/Enemies/FootSoldier/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_soldier",
+  "name": "spr_soldier_face_down_idle",
   "tags": [],
   "resourceType": "GMSprite",
 }

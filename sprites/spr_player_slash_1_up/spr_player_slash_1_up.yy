@@ -115,7 +115,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_slash_1_up","path":"sprites/spr_player_slash_1_up/spr_player_slash_1_up.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_slash_1_up",
     "tags": [],
     "resourceType": "GMSequence",

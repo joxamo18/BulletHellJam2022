@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"player_uzi_aim_right","path":"sprites/player_uzi_aim_right/player_uzi_aim_right.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "player_uzi_aim_right",
     "tags": [],
     "resourceType": "GMSequence",

@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_face_right_walk_l_r_AIMING","path":"sprites/spr_player_face_right_walk_l_r_AIMING/spr_player_face_right_walk_l_r_AIMING.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_face_right_walk_l_r_AIMING",
     "tags": [],
     "resourceType": "GMSequence",

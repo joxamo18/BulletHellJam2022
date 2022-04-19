@@ -115,7 +115,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_slash_1_left_hb","path":"sprites/spr_player_slash_1_left_hb/spr_player_slash_1_left_hb.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_slash_1_left_hb",
     "tags": [],
     "resourceType": "GMSequence",

@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_face_down_walk_u_d_AIMING","path":"sprites/spr_player_face_down_walk_u_d_AIMING/spr_player_face_down_walk_u_d_AIMING.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_face_down_walk_u_d_AIMING",
     "tags": [],
     "resourceType": "GMSequence",

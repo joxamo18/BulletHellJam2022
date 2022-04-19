@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Sprite41","path":"sprites/Sprite41/Sprite41.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Sprite41",
     "tags": [],
     "resourceType": "GMSequence",

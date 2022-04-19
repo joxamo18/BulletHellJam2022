@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"player_uzi","path":"sprites/player_uzi/player_uzi.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "player_uzi",
     "tags": [],
     "resourceType": "GMSequence",

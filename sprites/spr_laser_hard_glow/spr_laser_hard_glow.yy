@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_laser_hard_glow","path":"sprites/spr_laser_hard_glow/spr_laser_hard_glow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_laser_hard_glow",
     "tags": [],
     "resourceType": "GMSequence",

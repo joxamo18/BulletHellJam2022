@@ -40,8 +40,20 @@ else
 	fire_cooldown -= _dt
 }
 
+soldier_axis_direction()
+
+if (arm_instance == false) 
+{
+	arm_instance = instance_create_layer(x, y, layer, obj_soldier_arm);
+	arm_instance.creator = id
+}
+
 
 if (hp <= 0)
 {
+	with(arm_instance)
+	{
+		instance_destroy()
+	}
 	instance_destroy()
 }

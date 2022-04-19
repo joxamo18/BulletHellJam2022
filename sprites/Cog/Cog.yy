@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Cog","path":"sprites/Cog/Cog.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Cog",
     "tags": [],
     "resourceType": "GMSequence",

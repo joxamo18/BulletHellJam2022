@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_face_down_walk_l_r","path":"sprites/spr_player_face_down_walk_l_r/spr_player_face_down_walk_l_r.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_face_down_walk_l_r",
     "tags": [],
     "resourceType": "GMSequence",

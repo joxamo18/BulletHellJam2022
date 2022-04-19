@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "player_scripts",
-    "path": "folders/player/player_scripts.yy",
+    "name": "Enemies",
+    "path": "folders/Enemies.yy",
   },
   "resourceVersion": "1.0",
-  "name": "player_draw_arm",
+  "name": "soldier_axis_direction",
   "tags": [],
   "resourceType": "GMScript",
 }

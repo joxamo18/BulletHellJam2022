@@ -209,7 +209,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_slash_1_down_hb","path":"sprites/spr_player_slash_1_down_hb/spr_player_slash_1_down_hb.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_slash_1_down_hb",
     "tags": [],
     "resourceType": "GMSequence",

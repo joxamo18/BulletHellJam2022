@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_particle_orange","path":"sprites/spr_particle_orange/spr_particle_orange.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_particle_orange",
     "tags": [],
     "resourceType": "GMSequence",

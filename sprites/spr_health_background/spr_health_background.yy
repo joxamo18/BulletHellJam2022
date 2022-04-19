@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_health_background","path":"sprites/spr_health_background/spr_health_background.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_health_background",
     "tags": [],
     "resourceType": "GMSequence",

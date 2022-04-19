@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_face_left_idle_AIMING","path":"sprites/spr_player_face_left_idle_AIMING/spr_player_face_left_idle_AIMING.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_player_face_left_idle_AIMING",
     "tags": [],
     "resourceType": "GMSequence",
