@@ -1,15 +1,21 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (keyboard_check(vk_enter) && global.gamestate == "start")
+if (global.gamestate == "start")
 {
-	main_theme_song = audio_play_sound(snd_main_level_theme, 0, false);
-	global.gamestate = "intro";
-	with (obj_player)
+	if (keyboard_check(vk_enter))
 	{
-		state = PLAYERSTATE.GAME_CONTROLLED
+		audio_stop_sound(main_theme_song);
+		main_theme_song = audio_play_sound(snd_main_level_theme, 0, false);
+		global.gamestate = "intro";
+		with (obj_player)
+		{
+			state = PLAYERSTATE.GAME_CONTROLLED
+		}
 	}
 }
+
+
 
 
 if (global.gamestate == "intro")

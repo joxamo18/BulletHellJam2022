@@ -87,6 +87,7 @@ function player_axis_direction(){
 		return
 	}
 	else { //aiming right
+		
 		player_direction = PLAYERDIRECTION.RIGHT
 		if (keyboard_check(ord("S")) || keyboard_check(ord("W")))
 		{

@@ -24,8 +24,8 @@
     {"speed":100.0,"x":443.75,"y":5299.25,},
   ],
   "parent": {
-    "name": "BulletHellJam",
-    "path": "BulletHellJam.yyp",
+    "name": "Paths",
+    "path": "folders/Paths.yy",
   },
   "resourceVersion": "1.0",
   "name": "LoopPath",

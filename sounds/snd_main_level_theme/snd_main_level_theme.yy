@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_main_level_theme.mp3",
-  "duration": 121.443275,
+  "duration": 126.2498,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -5,7 +5,7 @@
 
 function player_state_attack_slash_1(){
 	var slash_sprite = spr_player_slash_1_up
-	var slash_mask = spr_player_slash_1_up_hb
+	var slash_mask = ""
 	var prev_mask = mask_index
 	
 	var v_x = mouse_x - x
@@ -43,7 +43,7 @@ function player_state_attack_slash_1(){
 				slash_sprite = spr_player_slash_2_right
 			}
 
-			//slash_mask = spr_player_slash_1_right_hb
+			slash_mask = spr_player_slash_1_right_hb
 			//if (place_free(x + slash_speed, y))
 			//{
 			//	x += slash_speed

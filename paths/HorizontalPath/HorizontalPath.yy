@@ -14,8 +14,8 @@
     {"speed":100.0,"x":1152.0,"y":7200.0,},
   ],
   "parent": {
-    "name": "BulletHellJam",
-    "path": "BulletHellJam.yyp",
+    "name": "Paths",
+    "path": "folders/Paths.yy",
   },
   "resourceVersion": "1.0",
   "name": "HorizontalPath",
