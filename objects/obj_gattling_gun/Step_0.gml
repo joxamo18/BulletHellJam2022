@@ -17,14 +17,17 @@ if (ammo_reload_timer > 0)
 
 
 
-if (arm_instance == false) 
+if (arm_instance == false && instance_exists(obj_player)) 
 {
 	arm_instance = instance_create_layer(x, y, layer, obj_gattling_gun_arm);
 	arm_instance.creator = id
 }
 else 
 {
-	gattling_gun_axis_direction() 
+	if (instance_exists(obj_player))
+	{
+		gattling_gun_axis_direction() 
+	}
 }
 
 

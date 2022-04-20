@@ -19,12 +19,19 @@ if (ammo_reload_timer > 0)
 }
 
 
-soldier_axis_direction()
+
 
 if (arm_instance == false) 
 {
 	arm_instance = instance_create_layer(x, y, layer, obj_soldier_arm);
 	arm_instance.creator = id
+}
+else 
+{
+	if (instance_exists(obj_player))
+	{
+		soldier_axis_direction()
+	}
 }
 
 

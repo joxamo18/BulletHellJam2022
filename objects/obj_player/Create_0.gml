@@ -16,7 +16,7 @@ slash_speed_y = 2;
 slash_damage = 3;
 current_slash = 1;
 
-hp = 50
+hp = 3
 
 hit_cooldown_rate = 2;
 hit_cooldown = 0;
