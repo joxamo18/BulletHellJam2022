@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite39",
-    "path": "sprites/Sprite39/Sprite39.yy",
+    "name": "spr_door_trigger",
+    "path": "sprites/spr_door_trigger/spr_door_trigger.yy",
   },
   "solid": false,
   "visible": false,
