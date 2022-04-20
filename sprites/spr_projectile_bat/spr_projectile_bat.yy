@@ -85,8 +85,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Enemies.yy",
+    "name": "Bats",
+    "path": "folders/Enemies/Bats.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_projectile_bat",
