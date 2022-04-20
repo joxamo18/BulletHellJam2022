@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite17",
-    "path": "sprites/Sprite17/Sprite17.yy",
+    "name": "spr_gattling_gun_walking_down_FACE_DOWN",
+    "path": "sprites/spr_gattling_gun_walking_down_FACE_DOWN/spr_gattling_gun_walking_down_FACE_DOWN.yy",
   },
   "solid": true,
   "visible": true,
@@ -25,6 +25,7 @@
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_enemy_goal","path":"objects/obj_enemy_goal/obj_enemy_goal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
     {"varType":5,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"gattling_gun_goal","tags":[],"resourceType":"GMObjectProperty",},
@@ -32,8 +33,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "GattlingGunna",
+    "path": "folders/Enemies/GattlingGunna.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_gattling_gun",

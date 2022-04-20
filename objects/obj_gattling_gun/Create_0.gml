@@ -17,6 +17,9 @@ healthbar_width = 200
 
 
 path = path_add()
+goal_reached = false
+
+arm_instance = false
 
 target_x = gattling_gun_goal.x
 target_y = gattling_gun_goal.y

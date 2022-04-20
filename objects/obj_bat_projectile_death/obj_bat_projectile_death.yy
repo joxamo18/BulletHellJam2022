@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite2021",
-    "path": "sprites/Sprite2021/Sprite2021.yy",
+    "name": "spr_projectile_bat",
+    "path": "sprites/spr_projectile_bat/spr_projectile_bat.yy",
   },
   "solid": false,
   "visible": true,

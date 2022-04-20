@@ -24,44 +24,36 @@ y = creator.y
 			depth = player_depth - 1
 		
 	}
-	
-//var arm_x = x
-//var arm_y = y
 
-//var v_x = mouse_x - x
-//var v_y = mouse_y - y
-//var v_length = sqrt(sqr(v_x) + sqr(v_y))
+var v_x = obj_player.x - x
+var v_y = obj_player.y - y
+var v_length = sqrt(sqr(v_x) + sqr(v_y))
 
-//v_x = v_x / v_length
-//v_y = v_y / v_length
+v_x = v_x / v_length
+v_y = v_y / v_length
 
-//with(creator)
-//{
-	
-//	//Fire when pressing the left mouse button
-//	if (mouse_check_button(mb_left)) 
-//	{
-//		//reduce speed to account for recoil
-//		spd = 2;
-//		if (cooldown == 0)
-//		{
-//			//reduce ammo of special weapon if necessary
-
-		
-//			//fire normal weapon (1 bullet)
-//			if (uzi_ammo > 0)
-//			{
-//				uzi_ammo--;
-//				instance_create_layer(arm_x + v_x * 20,arm_y + v_y * 20,"lay_bullets",obj_bullet);
-//			}
-			
-//			//set cooldown to current weaponspeed
-//			cooldown = fire_rate;
-//		}
-//	}
-//	else 
-//	{
-//		//restore speed to default
-//		spd = basespd; 
-//	}
-//}
+with (creator)
+{
+	var _dt = delta_time / 1000000
+	if (fire_cooldown <= 0 && can_fire && ammo > 0)
+	{
+		var bullets = instance_create_layer(x + v_x * 16, y + v_y * 16, "lay_bullets", obj_enemyBullet)
+		var creator_id = id;
+		with (bullets)
+		{
+			direction = point_direction(x, y, obj_player.x, obj_player.y)
+			speed = 7
+			object_who_spawned_me = creator_id
+		}
+		ammo--;
+		if (ammo == 0)
+		{
+			ammo_reload_timer = ammo_reload_rate
+		}
+		fire_cooldown = fire_rate
+	}
+	else
+	{
+		fire_cooldown -= _dt
+	}
+}

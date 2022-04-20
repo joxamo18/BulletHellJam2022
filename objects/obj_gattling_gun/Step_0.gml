@@ -14,32 +14,22 @@ if (ammo_reload_timer > 0)
 	}
 }
 
-if (fire_cooldown <= 0 && in_combat && ammo > 0)
+
+gattling_gun_axis_direction() 
+
+if (arm_instance == false) 
 {
-	var bullets = instance_create_layer(x,y,"lay_bullets", obj_enemyBullet)
-	var creator_id = id
-	with (bullets)
-	{
-		direction = point_direction(x , y, obj_player.x, obj_player.y)
-		speed = 15
-		object_who_spawned_me = creator_id
-	}
-	
-	ammo--;
-	if (ammo == 0)
-	{
-		ammo_reload_timer = ammo_reload_rate
-	}
-	
-	fire_cooldown = fire_rate
-}
-else
-{
-	fire_cooldown -= _dt
+	arm_instance = instance_create_layer(x, y, layer, obj_gattling_gun_arm);
+	arm_instance.creator = id
 }
 
-if (hp == 0)
+
+if (hp <= 0)
 {
+	with(arm_instance)
+	{
+		instance_destroy()
+	}
 	instance_destroy()
 }
 
