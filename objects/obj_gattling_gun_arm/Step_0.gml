@@ -9,21 +9,21 @@ image_angle = angle + 90
 x = creator.x + 10
 y = creator.y
 
-	if (angle < 135 && angle > 45) //aiming up
-	{ 
+if (angle < 135 && angle >= 45) //aiming up
+{ 
 		
 
-			var player_depth = creator.depth
-			depth = player_depth + 1
+		var player_depth = creator.depth
+		depth = player_depth + 1
 
 		
-	}
-	else {
+}
+else {
 
-			var player_depth = creator.depth
-			depth = player_depth - 1
+		var player_depth = creator.depth
+		depth = player_depth - 1
 		
-	}
+}
 
 var v_x = obj_player.x - x
 var v_y = obj_player.y - y
