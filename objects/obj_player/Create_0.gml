@@ -11,8 +11,6 @@ cooldown = 0;
 
 hit_by_attack = ds_list_create();
 slash_speed = 2
-slash_speed_x = 2;
-slash_speed_y = 2;
 slash_damage = 3;
 current_slash = 1;
 

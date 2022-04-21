@@ -59,3 +59,22 @@ if (global.gamestate == "boss_intro")
 		}
 	}
 }
+
+if (!instance_exists(obj_player) and global.gamestate != "continue")
+{
+	last_game_state = global.gamestate
+	global.gamestate = "continue"
+	instance_deactivate_all(true)
+}
+
+if (global.gamestate == "continue" and keyboard_check(vk_enter))
+{
+	global.gamestate = last_game_state
+	instance_create_layer(
+		camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,
+		camera_get_view_y(view_camera[0])+camera_get_view_width(view_camera[0])/2,
+		"lay_player",
+		obj_player
+	)
+	instance_activate_all()
+}

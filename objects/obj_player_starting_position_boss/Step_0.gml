@@ -1,8 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (bbox_bottom  > obj_player.bbox_bottom)
+if (instance_exists(obj_player) and bbox_bottom  > obj_player.bbox_bottom)
 {
-	show_debug_message("it works")
 	with (obj_game)
 	{
 		player_moving_forward = false

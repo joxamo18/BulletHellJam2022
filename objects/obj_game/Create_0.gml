@@ -3,6 +3,7 @@
 global.myscore = 0;
 global.gamestate = "start"
 
+last_game_state = ""
 player_moving_forward = false
 
 start_boss_warning_timer = false
