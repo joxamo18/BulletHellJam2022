@@ -7,8 +7,21 @@ if (in_combat) {
 	_dt = delta_time / 1000000
 
 	//managing state changes
-	if (beam_firing_cooldown > 0)
+	if (hp / hp_max < 0.5 and beam_firing_cooldown > 0)
 	{
+		if (current_state != TURRET_STATE.PROJECTILE_BAT)
+		{
+			current_state = TURRET_STATE.PROJECTILE_BAT
+			sprite_index = spr_max_bat_attack_1
+		}
+	}
+	else if (beam_firing_cooldown > 0)
+	{
+		if (current_state == TURRET_STATE.PROJECTILE_FIRING)
+		{
+			sprite_index = spr_maxis
+			at_beam_location = false
+		}
 		if (instance_exists(obj_laser))
 		{
 
@@ -19,6 +32,10 @@ if (in_combat) {
 	}
 	else
 	{
+		if (current_state == TURRET_STATE.PROJECTILE_FIRING)
+		{
+			sprite_index = spr_featile_max
+		}
 		current_state = TURRET_STATE.PROJECTILE_BEAM	
 		beam_firing_timer -= _dt;
 		if (beam_firing_timer <= 0)
@@ -52,6 +69,11 @@ if (in_combat) {
 	if (current_state == TURRET_STATE.PROJECTILE_BEAM)
 	{
 		turret_state_projectile_beam()
+	}
+	
+	if (current_state == TURRET_STATE.PROJECTILE_BAT)
+	{
+		turret_state_projectile_bat()
 	}
 	
 }

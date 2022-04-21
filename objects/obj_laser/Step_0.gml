@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-x = obj_spinningTurrent.x
-y = obj_spinningTurrent.y
+//x = obj_spinningTurrent.x
+//y = obj_spinningTurrent.y
 
 //direction = point_direction(obj_spinningTurrent.x, obj_spinningTurrent.y, obj_spinningTurrent.x, obj_spinningTurrent.y + 100);
 

@@ -2,25 +2,38 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function turret_state_projectile_beam(){
 
+	
 	var vX = center_of_field.x - x
 	var vY = center_of_field.y - y
 	
-	var length = sqrt((vX * vX) + (vY * vY));
+	try {
+		var length = sqrt((vX * vX) + (vY * vY));
+	}
+	catch(error)
+	{
+		throw error
+	}
+
 	
 	vX = vX / length
 	vY = vY / length
 	
 
 	
-	x += vX * movement_speed_x * _dt
-	y += vY * movement_speed_y * _dt
+	x += vX * move_to_center_speed_x * _dt
+	y += vY * move_to_center_speed_y * _dt
 
+	if (!at_beam_location)
+	{ 
+		return
+	}
+	
 	if !(instance_exists(obj_laser))
 	{
 		for (var i = 0; i < array_length(turretsB); i++)
 		{
-			var new_x = centerX + lengthdir_x(50, turretsB[i])
-			var new_y = centerY + lengthdir_y(50, turretsB[i])
+			var new_x = centerX + lengthdir_x(35, turretsB[i])
+			var new_y = centerY + lengthdir_y(35, turretsB[i])
 		
 			if (rotationDirection = "left")
 				turretsB[i] += rotation_speed;
@@ -44,8 +57,8 @@ function turret_state_projectile_beam(){
 	{
 		for (var i = 0; i < array_length(turretsB); i++)
 		{
-			var new_x = centerX + lengthdir_x(50, turretsB[i])
-			var new_y = centerY + lengthdir_y(50, turretsB[i])
+			var new_x = centerX + lengthdir_x(35, turretsB[i])
+			var new_y = centerY + lengthdir_y(35, turretsB[i])
 		
 			if (rotationDirection = "left")
 				turretsB[i] += laser_rotation_speed;
@@ -60,7 +73,9 @@ function turret_state_projectile_beam(){
 	
 			with (lasers[i])
 			{
-				direction = desiredAngle
+				x = new_x;
+				y = new_y;
+				direction = desiredAngle + 90
 			}
 		}
 	}

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-hp = 200
+hp = 100
 hp_max = hp
 
 healthbar_width = 200
@@ -10,6 +10,8 @@ rotation_speed = 5
 laser_rotation_speed = 1
 movement_speed_x = 32
 movement_speed_y = 32
+move_to_center_speed_x = 128
+move_to_center_speed_y = 128
 x_direction = 1
 y_direction = 1
 centerX = 0
@@ -27,6 +29,7 @@ turretsA = [0, 90, 180, 270];
 turretsB = [45, 135, 225, 315]; 
 
 lasers = [];
+bat_spawners = [];
 
 max_beam_firing_cooldown = 20
 beam_firing_cooldown = max_beam_firing_cooldown
@@ -38,5 +41,6 @@ current_state = TURRET_STATE.PROJECTILE_FIRING
 
 enum TURRET_STATE {
 	PROJECTILE_FIRING,
-	PROJECTILE_BEAM
+	PROJECTILE_BEAM,
+	PROJECTILE_BAT
 }

@@ -1,0 +1,1 @@
+array_push(obj_spinningTurrent.bat_spawners, self)
