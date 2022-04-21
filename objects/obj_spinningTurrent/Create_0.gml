@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-hp = 100
+hp = 150
 hp_max = hp
 
 healthbar_width = 200
@@ -42,5 +42,6 @@ current_state = TURRET_STATE.PROJECTILE_FIRING
 enum TURRET_STATE {
 	PROJECTILE_FIRING,
 	PROJECTILE_BEAM,
-	PROJECTILE_BAT
+	PROJECTILE_BAT,
+	DEAD
 }

@@ -7,7 +7,7 @@ if (in_combat) {
 	_dt = delta_time / 1000000
 
 	//managing state changes
-	if (hp / hp_max < 0.5 and beam_firing_cooldown > 0)
+	if (hp / hp_max < 0.2 and beam_firing_cooldown > 0)
 	{
 		if (current_state != TURRET_STATE.PROJECTILE_BAT)
 		{
@@ -76,6 +76,16 @@ if (in_combat) {
 		turret_state_projectile_bat()
 	}
 	
+	if (hp <= 0)
+	{
+		current_state = TURRET_STATE.DEAD
+		for (var i = 0; i < array_length(bat_spawners); i++)
+		{
+			bat_spawners[i].can_spawn = false
+		}
+		instance_destroy(obj_bat)
+		instance_destroy()
+	}
 }
 
 
