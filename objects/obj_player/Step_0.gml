@@ -3,8 +3,10 @@ if (global and global.gamestate == "start")
 	return
 }
 
-if (hp == 0)
+if (hp <= 0)
 {
+	obj_game.player_death_location_x = x
+	obj_game.player_death_location_y = y
 	instance_destroy()
 }
 

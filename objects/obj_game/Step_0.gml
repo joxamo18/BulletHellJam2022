@@ -70,11 +70,18 @@ if (!instance_exists(obj_player) and global.gamestate != "continue")
 if (global.gamestate == "continue" and keyboard_check(vk_enter))
 {
 	global.gamestate = last_game_state
-	instance_create_layer(
-		camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,
-		camera_get_view_y(view_camera[0])+camera_get_view_width(view_camera[0])/2,
+	var player = instance_create_layer(
+		player_death_location_x,
+		player_death_location_y,
 		"lay_player",
 		obj_player
 	)
+	
+	with (player)
+	{
+		hp = 3
+		hit_cooldown = hit_cooldown_rate;
+	}
+	
 	instance_activate_all()
 }

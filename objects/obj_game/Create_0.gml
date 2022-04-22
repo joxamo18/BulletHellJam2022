@@ -13,3 +13,6 @@ main_theme_song = audio_play_sound(snd_intro_loop, 0, true);
 
 warning_sound = ""
 warning_alpha = 1
+
+player_death_location_x = 0
+player_death_location_y = 0
