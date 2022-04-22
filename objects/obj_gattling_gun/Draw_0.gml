@@ -2,7 +2,7 @@
 // You can write your code in this editor
 draw_self()
 
-draw_path(path, x, y, 1)
+//draw_path(path, x, y, 1)
 
 var cam_x = camera_get_view_x(view_camera[0]);
 var cam_y = camera_get_view_y(view_camera[0]);
