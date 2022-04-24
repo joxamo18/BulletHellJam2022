@@ -7,6 +7,11 @@
 
 
 var max_length = 900;
+var centerX = x-sprite_get_xoffset(spr_particle_orange)+(sprite_get_width(spr_particle_orange)/2)
+var centerY = y-sprite_get_yoffset(spr_particle_orange)+(sprite_get_height(spr_particle_orange)/2)
+		
+part_particles_create(obj_part_setup.particleSystem, centerX, centerY, obj_part_setup.particleType_Hit, 1)
+
 for (i = 0; i < max_length; i++)
 {
 

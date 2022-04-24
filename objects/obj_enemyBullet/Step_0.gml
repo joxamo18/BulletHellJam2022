@@ -12,6 +12,7 @@
 	
 	if (tilemap_get_at_pixel(tiles, x, y) || collision_point(x, y, obj_wall, false, false) ||  collision_point(x, y, obj_table, false, false))
 	{
+		part_particles_create(obj_part_setup.particleSystem, x, y, obj_part_setup.particleType_DeflectionSpark_Small, 5)
 		instance_destroy(self)
 	}
 	

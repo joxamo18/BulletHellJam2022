@@ -10,6 +10,7 @@ part_particles_create(obj_part_setup.particleSystem, x, y, obj_part_setup.partic
 var bullets = instance_create_layer(x,y,"lay_bullets", obj_enemyBullet)
 with (bullets)
 {
+	sprite_index = spr_bullet5
 	direction = point_direction(x , y, obj_player.x, obj_player.y)
 	speed = 4
 }
