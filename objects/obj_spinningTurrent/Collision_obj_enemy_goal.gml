@@ -13,6 +13,9 @@ if (current_state == TURRET_STATE.PROJECTILE_BAT and other.tag == "bat_goal")
 	at_beam_location = true
 	sprite_index = spr_max_bat_attack_2
 	
+	audio_play_sound(snd_bat_summoning_layer_1,0,true)
+	audio_play_sound(snd_bat_summoning_layer_2,0,true)
+	
 	for (var i = 0; i < array_length(bat_spawners); i++)
 	{
 		bat_spawners[i].can_spawn = true

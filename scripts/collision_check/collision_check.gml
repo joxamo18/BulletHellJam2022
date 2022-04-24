@@ -18,7 +18,7 @@ function collision_check(){
 		{
 			with(collision_point(x, y, obj_gattling_gun, false, false))
 			{
-				hp -= 4
+				hp -= 2
 				audio_play_sound(snd_bullet_impact,0,false)
 			}
 			instance_destroy(self)
@@ -26,9 +26,9 @@ function collision_check(){
 		
 		if (collision_point(x, y, obj_spinningTurrent, false, false))
 		{
-			with(collision_point(x, y, obj_gattling_gun, false, false))
+			with(collision_point(x, y, obj_spinningTurrent, false, false))
 			{
-				hp -= 4
+				hp -= 2
 				audio_play_sound(snd_bullet_impact,0,false)
 			}
 			instance_destroy(self)
