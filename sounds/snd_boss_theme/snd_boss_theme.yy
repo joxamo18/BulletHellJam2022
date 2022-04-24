@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_warning.mp3",
-  "duration": 7.49715,
+  "soundFile": "snd_boss_theme.mp3",
+  "duration": 62.77225,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_warning",
+  "name": "snd_boss_theme",
   "tags": [],
   "resourceType": "GMSound",
 }

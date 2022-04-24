@@ -5,8 +5,10 @@ if (global.gamestate == "start")
 {
 	if (keyboard_check(vk_enter))
 	{
-		audio_stop_sound(main_theme_song);
-		main_theme_song = audio_play_sound(snd_main_level_theme, 0, false);
+		audio_sound_gain(intro_theme_song, 0, 1000);
+		//audio_stop_sound(main_theme_song);
+		//main_theme_song = audio_play_sound(snd_main_level_theme, 0, false);
+		audio_sound_gain(main_theme_song, 1, 500);
 		global.gamestate = "intro";
 		with (obj_player)
 		{
@@ -45,6 +47,7 @@ if (global.gamestate == "boss_intro")
 		
 		if (boss_warning_timer <= 0)
 		{
+			main_theme_song = audio_play_sound(snd_boss_theme, 0, true);
 			audio_sound_gain(warning_sound, 0, 1000);
 			global.gamestate = "boss_fight"
 			with (obj_player)

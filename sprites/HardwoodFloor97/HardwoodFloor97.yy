@@ -8,13 +8,13 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 95,
+  "bbox_right": 191,
   "bbox_top": 0,
   "bbox_bottom": 255,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 96,
+  "width": 256,
   "height": 256,
   "textureGroupId": {
     "name": "Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"bb1c3b71-152e-4965-bd7f-c3c69102c4da","path":"sprites/HardwoodFloor/HardwoodFloor.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bb1c3b71-152e-4965-bd7f-c3c69102c4da","path":"sprites/HardwoodFloor/HardwoodFloor.yy",},"LayerId":{"name":"c752e015-e1da-4a34-abfe-77b40b5383d2","path":"sprites/HardwoodFloor/HardwoodFloor.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"HardwoodFloor","path":"sprites/HardwoodFloor/HardwoodFloor.yy",},"resourceVersion":"1.0","name":"bb1c3b71-152e-4965-bd7f-c3c69102c4da","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"03edb283-2db5-4ae6-bf9a-18441345ddc9","path":"sprites/HardwoodFloor97/HardwoodFloor97.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"03edb283-2db5-4ae6-bf9a-18441345ddc9","path":"sprites/HardwoodFloor97/HardwoodFloor97.yy",},"LayerId":{"name":"c752e015-e1da-4a34-abfe-77b40b5383d2","path":"sprites/HardwoodFloor97/HardwoodFloor97.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"HardwoodFloor97","path":"sprites/HardwoodFloor97/HardwoodFloor97.yy",},"resourceVersion":"1.0","name":"03edb283-2db5-4ae6-bf9a-18441345ddc9","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"HardwoodFloor","path":"sprites/HardwoodFloor/HardwoodFloor.yy",},
+    "spriteId": {"name":"HardwoodFloor97","path":"sprites/HardwoodFloor97/HardwoodFloor97.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"acd3562b-39f5-45d2-bc4e-245af59ef5d5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bb1c3b71-152e-4965-bd7f-c3c69102c4da","path":"sprites/HardwoodFloor/HardwoodFloor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7b60e768-f294-44d7-8742-7d2ac723aa2e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"03edb283-2db5-4ae6-bf9a-18441345ddc9","path":"sprites/HardwoodFloor97/HardwoodFloor97.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,7 +58,7 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"HardwoodFloor","path":"sprites/HardwoodFloor/HardwoodFloor.yy",},
+    "parent": {"name":"HardwoodFloor97","path":"sprites/HardwoodFloor97/HardwoodFloor97.yy",},
     "resourceVersion": "1.4",
     "name": "HardwoodFloor",
     "tags": [],
@@ -73,7 +73,7 @@
     "path": "folders/Rooms/Main.yy",
   },
   "resourceVersion": "1.0",
-  "name": "HardwoodFloor",
+  "name": "HardwoodFloor97",
   "tags": [],
   "resourceType": "GMSprite",
 }
