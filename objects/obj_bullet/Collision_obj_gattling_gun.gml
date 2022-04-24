@@ -7,6 +7,6 @@ with(other)
 		hp--;	
 	}
 }
-
+audio_play_sound(snd_bullet_impact,0,false)
 //destroy the bullet
 instance_destroy();

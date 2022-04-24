@@ -24,7 +24,10 @@ if (in_combat) {
 		}
 		if (instance_exists(obj_laser))
 		{
-
+			audio_stop_sound(snd_beam_firing)
+			audio_stop_sound(snd_beam_firing_loop)
+			audio_stop_sound(snd_beam_power_up)
+			audio_stop_sound(snd_beam_impact)
 			instance_destroy(obj_laser)
 		}
 		current_state = TURRET_STATE.PROJECTILE_FIRING
@@ -34,6 +37,7 @@ if (in_combat) {
 	{
 		if (current_state == TURRET_STATE.PROJECTILE_FIRING)
 		{
+			audio_play_sound(snd_beam_power_up,0,false)
 			sprite_index = spr_featile_max
 		}
 		current_state = TURRET_STATE.PROJECTILE_BEAM	

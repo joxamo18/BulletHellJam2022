@@ -27,9 +27,22 @@ for (i = 0; i < max_length; i++)
 		
 		if collision_point(xEnd, yEnd, obj_player, false, false)
 		{
+			isColliding = true
+			if(!audio_is_playing(snd_beam_impact))
+			{
+				audio_play_sound(snd_beam_impact,0,true)
+			}
 			with(obj_player)
 			{
 				player_state_taking_damage();
+			}
+		}
+		else 
+		{
+			isColliding = false
+			if(audio_is_playing(snd_beam_impact))
+			{
+				audio_stop_sound(snd_beam_impact)
 			}
 		}
 		break;

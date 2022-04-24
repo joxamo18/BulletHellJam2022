@@ -11,5 +11,6 @@ with (bullets)
 	direction = point_direction(x , y, obj_player.x, obj_player.y)
 	speed = 4
 }
+audio_play_sound(snd_bullet_impact,0,false)
 //destroy the bullet
 instance_destroy();

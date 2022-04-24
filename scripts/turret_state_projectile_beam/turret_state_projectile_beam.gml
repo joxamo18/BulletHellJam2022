@@ -27,9 +27,12 @@ function turret_state_projectile_beam(){
 	{ 
 		return
 	}
+	audio_stop_sound(snd_beam_power_up)
 	
 	if !(instance_exists(obj_laser))
 	{
+		audio_play_sound(snd_beam_firing,0,false)
+		audio_play_sound(snd_beam_firing_loop,0,true)
 		for (var i = 0; i < array_length(turretsB); i++)
 		{
 			var new_x = centerX + lengthdir_x(35, turretsB[i])
@@ -54,7 +57,7 @@ function turret_state_projectile_beam(){
 		}
 	}
 	else 
-	{
+	{		
 		for (var i = 0; i < array_length(turretsB); i++)
 		{
 			var new_x = centerX + lengthdir_x(35, turretsB[i])

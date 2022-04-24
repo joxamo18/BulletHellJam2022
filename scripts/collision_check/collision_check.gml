@@ -7,9 +7,9 @@ function collision_check(){
 		{
 			with(collision_point(x, y, obj_soldier, false, false))
 			{
-				show_debug_message("hit soldier")
+
+				audio_play_sound(snd_bullet_impact,0,false)
 				hp -= 4
-				show_debug_message(hp)
 			}
 			instance_destroy(self)
 		}
@@ -19,6 +19,7 @@ function collision_check(){
 			with(collision_point(x, y, obj_gattling_gun, false, false))
 			{
 				hp -= 4
+				audio_play_sound(snd_bullet_impact,0,false)
 			}
 			instance_destroy(self)
 		}
@@ -28,6 +29,7 @@ function collision_check(){
 			with(collision_point(x, y, obj_gattling_gun, false, false))
 			{
 				hp -= 4
+				audio_play_sound(snd_bullet_impact,0,false)
 			}
 			instance_destroy(self)
 		}
