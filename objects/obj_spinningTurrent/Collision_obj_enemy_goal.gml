@@ -15,6 +15,7 @@ if (current_state == TURRET_STATE.PROJECTILE_BAT and other.tag == "bat_goal")
 	
 	audio_play_sound(snd_bat_summoning_layer_1,0,true)
 	audio_play_sound(snd_bat_summoning_layer_2,0,true)
+	audio_play_sound(snd_bat_summoning_layer_3,0,true)
 	
 	for (var i = 0; i < array_length(bat_spawners); i++)
 	{

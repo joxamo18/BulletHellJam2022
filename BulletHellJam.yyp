@@ -90,6 +90,7 @@
     {"id":{"name":"LeftHook","path":"paths/LeftHook/LeftHook.yy",},"order":0,},
     {"id":{"name":"spr_player_face_right_idle","path":"sprites/spr_player_face_right_idle/spr_player_face_right_idle.yy",},"order":9,},
     {"id":{"name":"spr_door_trigger","path":"sprites/spr_door_trigger/spr_door_trigger.yy",},"order":22,},
+    {"id":{"name":"snd_bat_summoning_layer_3","path":"sounds/snd_bat_summoning_layer_3/snd_bat_summoning_layer_3.yy",},"order":29,},
     {"id":{"name":"door","path":"sprites/door/door.yy",},"order":15,},
     {"id":{"name":"spr_table","path":"sprites/spr_table/spr_table.yy",},"order":37,},
     {"id":{"name":"spr_train_outside","path":"sprites/spr_train_outside/spr_train_outside.yy",},"order":8,},
