@@ -135,6 +135,8 @@ function player_state_attack_slash_1(){
 						
 						if (object_index == obj_enemyBullet)
 						{
+								part_particles_create(obj_part_setup.particleSystem, x, y, obj_part_setup.particleType_DeflectionSpark, 1)
+								part_particles_create(obj_part_setup.particleSystem, x, y, obj_part_setup.particleType_DeflectionSpark_Small, 5)
 								audio_play_sound(ds_queue_head(reflect_queue), 0, false)
 								var soundHead = ds_queue_dequeue(reflect_queue)
 								show_debug_message(audio_get_name(soundHead))

@@ -9,6 +9,7 @@ function collision_check(){
 			{
 
 				audio_play_sound(snd_bullet_impact,0,false)
+				part_particles_create(obj_part_setup.particleSystem, other.x, other.y, obj_part_setup.particleType_Blood, 10)
 				hp -= 2
 			}
 			instance_destroy(self)
@@ -20,6 +21,7 @@ function collision_check(){
 			{
 				hp -= 2
 				audio_play_sound(snd_bullet_impact,0,false)
+				part_particles_create(obj_part_setup.particleSystem, other.x, other.y, obj_part_setup.particleType_Blood, 10)
 			}
 			instance_destroy(self)
 		}
@@ -30,6 +32,7 @@ function collision_check(){
 			{
 				hp -= 1
 				audio_play_sound(snd_bullet_impact,0,false)
+				part_particles_create(obj_part_setup.particleSystem, other.x, other.y, obj_part_setup.particleType_Blood, 10)
 			}
 			instance_destroy(self)
 		}

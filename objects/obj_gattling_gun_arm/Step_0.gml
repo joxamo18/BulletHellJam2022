@@ -48,6 +48,8 @@ with (creator)
 		var creator_id = id
 		with (bullets)
 		{
+			sprite_index = spr_bullet3
+			rotating = true
 			direction = point_direction(x , y, obj_player.x, obj_player.y)
 			speed = 15
 			object_who_spawned_me = creator_id

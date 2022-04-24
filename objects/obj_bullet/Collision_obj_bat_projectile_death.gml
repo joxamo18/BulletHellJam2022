@@ -4,8 +4,10 @@ with(other)
 {	
 instance_destroy();
 }
-var bullets = instance_create_layer(x,y,"lay_bullets", obj_enemyBullet)
 
+part_particles_create(obj_part_setup.particleSystem, x, y, obj_part_setup.particleType_Blood, 10)
+
+var bullets = instance_create_layer(x,y,"lay_bullets", obj_enemyBullet)
 with (bullets)
 {
 	direction = point_direction(x , y, obj_player.x, obj_player.y)

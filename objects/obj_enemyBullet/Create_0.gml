@@ -3,3 +3,4 @@
 
 speed = 16;
 deflected = false
+rotating = false
