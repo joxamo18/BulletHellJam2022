@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-fire_rate = .4
+fire_rate = .3
 fire_cooldown = 0
 hp = 7.5
 can_fire = false

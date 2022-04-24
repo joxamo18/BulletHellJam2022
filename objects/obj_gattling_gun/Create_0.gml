@@ -3,7 +3,7 @@
 fire_rate = .1
 fire_cooldown = 0
 max_ammo = 40
-ammo = max_ammo
+ammo = 0
 ammo_reload_rate = 3
 ammo_reload_timer = 0
 
