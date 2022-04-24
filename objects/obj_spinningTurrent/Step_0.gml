@@ -9,6 +9,11 @@ if (in_combat) {
 	//managing state changes
 	if (hp / hp_max < 0.2 and beam_firing_cooldown > 0)
 	{
+		if (instance_exists(obj_laser))
+		{
+			instance_destroy(obj_laser)
+		}
+		
 		if (current_state != TURRET_STATE.PROJECTILE_BAT)
 		{
 			current_state = TURRET_STATE.PROJECTILE_BAT
