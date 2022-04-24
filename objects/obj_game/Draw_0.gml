@@ -68,3 +68,23 @@ if (!instance_exists(obj_player) and global.gamestate == "continue")
 		camera_get_view_y(view_camera[0])+camera_get_view_width(view_camera[0])/2,"Continue? [Press Enter]");
 }
 
+if (global.gamestate == "boss_beaten")
+{
+	beaten_game_alpha +=  .25 * (delta_time / 1000000)
+	var _guiW = room_width;
+	var _guiH = room_height;
+	
+	
+	draw_set_alpha(beaten_game_alpha);
+	draw_set_color(c_white);
+	draw_rectangle(0, 0, _guiW, _guiH, 0)
+	
+	if (beaten_game_alpha >= 1)
+	{
+		audio_play_sound(snd_ambient_ending, 0, true);
+	}
+	
+}
+
+
+

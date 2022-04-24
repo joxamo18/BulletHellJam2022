@@ -76,6 +76,10 @@ if (in_combat) {
 		turret_state_projectile_bat()
 	}
 	
+	if (current_state == TURRET_STATE.DEAD)
+	{
+	
+	}
 	if (hp <= 0)
 	{
 		current_state = TURRET_STATE.DEAD
@@ -84,7 +88,11 @@ if (in_combat) {
 			bat_spawners[i].can_spawn = false
 		}
 		instance_destroy(obj_bat)
-		instance_destroy()
+		instance_destroy(obj_enemyBullet)
+		instance_destroy(obj_laser)
+		audio_stop_sound(obj_game.main_theme_song)
+		global.gamestate = "boss_beaten"
+		//instance_destroy()
 	}
 }
 

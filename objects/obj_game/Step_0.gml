@@ -63,6 +63,11 @@ if (global.gamestate == "boss_intro")
 	}
 }
 
+if (global.gamestate == "boss_beaten" and boss_death_sound == 0)
+{
+	boss_death_sound = audio_play_sound(snd_boss_defeat, 0 , false)
+}
+
 if (!instance_exists(obj_player) and global.gamestate != "continue")
 {
 	last_game_state = global.gamestate
