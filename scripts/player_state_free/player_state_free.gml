@@ -5,6 +5,7 @@ function player_state_free(){
 	
 	if (mouse_check_button(mb_right)) {
 		state = PLAYERSTATE.ATTACK_SLASH_1
+		audio_play_sound(snd_sword_whip, 0, false)
 	}
 
 	if (!instance_exists(obj_player_arm) and mouse_check_button(mb_left)) 

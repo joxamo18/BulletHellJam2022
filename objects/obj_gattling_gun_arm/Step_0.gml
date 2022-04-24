@@ -57,6 +57,9 @@ with (creator)
 		if (ammo == 0)
 		{
 			ammo_reload_timer = ammo_reload_rate
+			audio_play_sound(snd_minigun_winddown, 0, false)
+			audio_stop_sound(snd_mini_gun_reflection)
+			audio_stop_sound(snd_minigun_windup_loop)
 		}
 	
 		fire_cooldown = fire_rate

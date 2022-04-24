@@ -103,7 +103,7 @@ function player_state_attack_slash_1(){
 		var enemy_id = ds_list_find_value(hit_by_attack, k)
 		character_slash_movement_direction(enemy_id)
 	}
-
+	
 	//loop through all enemies and see if hit occurs	
 	for (var j = 0; j < array_length(enemy_list); j++)
 	{
@@ -119,7 +119,7 @@ function player_state_attack_slash_1(){
 				{
 					ds_list_add(hit_by_attack, hit_id)
 					var player_slash_damage = slash_damage
-
+					var reflect_queue = sword_reflect_queue
 					with (hit_id)
 					{
 
@@ -135,18 +135,23 @@ function player_state_attack_slash_1(){
 						
 						if (object_index == obj_enemyBullet)
 						{
+								audio_play_sound(ds_queue_head(reflect_queue), 0, false)
+								var soundHead = ds_queue_dequeue(reflect_queue)
+								show_debug_message(audio_get_name(soundHead))
+								ds_queue_enqueue(reflect_queue, soundHead)
 								deflected = true
 								direction = point_direction(x,y,mouse_x,mouse_y)
 								speed = 15
 						
 							break
 						}
-
-						hp = hp - player_slash_damage;
-						if (hp <= 0)
+						if (!obj_player.has_impact_sound_played)
 						{
-							instance_destroy(hit_id)
+							obj_player.has_impact_sound_played = true
+							audio_play_sound(obj_player.sword_impact_array[random_range(0,2)], 0, false)
 						}
+						
+						hp = hp - player_slash_damage;
 					}
 					
 				}

@@ -44,6 +44,7 @@ with (creator)
 	if (fire_cooldown <= 0 && can_fire && ammo > 0)
 	{
 		var bullets = instance_create_layer(x + v_x * 16, y + v_y * 16, "lay_bullets", obj_enemyBullet)
+		audio_play_sound(snd_soldier_gun_shot,0 ,false)
 		var creator_id = id;
 		with (bullets)
 		{

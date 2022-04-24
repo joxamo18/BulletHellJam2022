@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-fire_rate = .2
+fire_rate = .1
 fire_cooldown = 0
-max_ammo = 20
+max_ammo = 40
 ammo = max_ammo
 ammo_reload_rate = 3
 ammo_reload_timer = 0

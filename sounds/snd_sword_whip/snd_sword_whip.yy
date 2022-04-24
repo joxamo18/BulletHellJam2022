@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.61,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_boss_theme.mp3",
-  "duration": 62.77225,
+  "soundFile": "snd_sword_whip.mp3",
+  "duration": 0.384,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_boss_theme",
+  "name": "snd_sword_whip",
   "tags": [],
   "resourceType": "GMSound",
 }

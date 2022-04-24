@@ -24,6 +24,21 @@ flashColor = c_white;
 
 enemy_list = [obj_bat, obj_bat_projectile_death, obj_soldier, obj_gattling_gun, obj_enemyBullet]
 
+var sword_reflect_snd_A = snd_sword_bullet_reflect_1
+	
+var sword_reflect_snd_B = snd_sword_bullet_reflect_2
+	
+var sword_reflect_snd_C = snd_sword_bullet_reflect_3
+	
+
+sword_reflect_queue = ds_queue_create()
+ds_queue_enqueue(sword_reflect_queue, sword_reflect_snd_A)
+ds_queue_enqueue(sword_reflect_queue, sword_reflect_snd_B)
+ds_queue_enqueue(sword_reflect_queue, sword_reflect_snd_C)
+
+has_impact_sound_played= false
+sword_impact_array = [snd_sword_impact_1,snd_sword_impact_2,snd_sword_impact_3]
+
 //able to fire again when cooldown reaches zero (based on weaponspd)
 player_direction = PLAYERDIRECTION.UP
 state = PLAYERSTATE.FREE;

@@ -56,6 +56,7 @@ with(obj_player)
 			{
 				uzi_ammo--;
 				instance_create_layer(arm_x + v_x * 20,arm_y + v_y * 20,"lay_bullets",obj_bullet);
+				audio_play_sound(snd_player_gun_shot, 0, false)
 			}
 			
 			//set cooldown to current weaponspeed
