@@ -3,6 +3,11 @@
 
 if (global.gamestate == "start")
 {
+		with (obj_player)
+		{
+			sprite_index = spr_player_face_up_idle	
+			state = PLAYERSTATE.GAME_CONTROLLED
+		}
 	if (keyboard_check(vk_enter))
 	{
 		audio_sound_gain(intro_theme_song, 0, 1000);
@@ -10,11 +15,7 @@ if (global.gamestate == "start")
 		//main_theme_song = audio_play_sound(snd_main_level_theme, 0, false);
 		audio_sound_gain(main_theme_song, 1, 500);
 		global.gamestate = "intro";
-		with (obj_player)
-		{
-			sprite_index = spr_player_face_up_walk_u_d
-			state = PLAYERSTATE.GAME_CONTROLLED
-		}
+
 	}
 }
 
@@ -26,6 +27,7 @@ if (global.gamestate == "intro")
 
 	with (obj_player)
 	{
+		sprite_index = spr_player_face_up_walk_u_d
 		state = PLAYERSTATE.GAME_CONTROLLED
 		y -= spd 
 	}
