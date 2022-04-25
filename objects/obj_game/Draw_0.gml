@@ -53,6 +53,19 @@ if (global.gamestate == "start")
 	draw_text(
 		camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,
 		camera_get_view_y(view_camera[0])+camera_get_view_width(view_camera[0])/2,"Press Enter");
+	
+	draw_set_font(fnt_smallest);
+	draw_text(
+		camera_get_view_x(view_camera[0])+128,
+		camera_get_view_y(view_camera[0])+ (camera_get_view_height(view_camera[0]) * 3/4),"Music by Himeko Katagiri (Seifuku Sound)");
+		
+	draw_text(
+		camera_get_view_x(view_camera[0])+128,
+		camera_get_view_y(view_camera[0])+(camera_get_view_height(view_camera[0]) * 3/4) + 32,"Programming and Art by Joseph Morales");
+
+	draw_text(
+			camera_get_view_x(view_camera[0])+128,
+			camera_get_view_y(view_camera[0])+(camera_get_view_height(view_camera[0]) * 3/4) + 64,"Additional Art by Niku Wolf");
 
 }
 
