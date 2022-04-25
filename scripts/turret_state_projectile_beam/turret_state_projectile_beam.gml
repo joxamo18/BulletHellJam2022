@@ -60,8 +60,8 @@ function turret_state_projectile_beam(){
 	{		
 		for (var i = 0; i < array_length(turretsB); i++)
 		{
-			var new_x = centerX + lengthdir_x(35, turretsB[i])
-			var new_y = centerY + lengthdir_y(35, turretsB[i])
+			var new_x = centerX + lengthdir_x(50, turretsB[i])
+			var new_y = centerY + lengthdir_y(50, turretsB[i])
 		
 			if (rotationDirection = "left")
 				turretsB[i] += laser_rotation_speed;

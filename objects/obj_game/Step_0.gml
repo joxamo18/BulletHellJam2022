@@ -70,6 +70,7 @@ if (global.gamestate == "boss_beaten" and boss_death_sound == 0)
 	with (obj_player)
 	{
 		state = PLAYERSTATE.GAME_CONTROLLED
+		sprite_index = spr_player_face_up_idle
 	}
 	
 	boss_death_sound = audio_play_sound(snd_boss_defeat, 0 , false)
