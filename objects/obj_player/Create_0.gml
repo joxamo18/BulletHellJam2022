@@ -11,7 +11,7 @@ cooldown = 0;
 max_stamina = 1
 sword_stamina = 1;
 increase_rate = 0.15
-sword_depletion_rate = .3;
+sword_depletion_rate = .33;
 sword_increase_from_kill_rate = .1
 
 

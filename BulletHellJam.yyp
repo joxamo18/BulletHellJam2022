@@ -69,6 +69,7 @@
     {"id":{"name":"snd_bullet_impact","path":"sounds/snd_bullet_impact/snd_bullet_impact.yy",},"order":22,},
     {"id":{"name":"scr_spinningTurret_pong_movement","path":"scripts/scr_spinningTurret_pong_movement/scr_spinningTurret_pong_movement.yy",},"order":0,},
     {"id":{"name":"collision_check","path":"scripts/collision_check/collision_check.yy",},"order":1,},
+    {"id":{"name":"spr_stamina_bar","path":"sprites/spr_stamina_bar/spr_stamina_bar.yy",},"order":29,},
     {"id":{"name":"spr_maxis","path":"sprites/spr_maxis/spr_maxis.yy",},"order":5,},
     {"id":{"name":"spr_enemy_splatter","path":"sprites/spr_enemy_splatter/spr_enemy_splatter.yy",},"order":6,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
