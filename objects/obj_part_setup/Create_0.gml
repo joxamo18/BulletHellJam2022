@@ -51,3 +51,11 @@ part_type_speed(particleType_DeflectionSpark_Small, 2, 4, -0.1, 0)
 part_type_direction( particleType_DeflectionSpark_Small, 0, 359, 0, 0);
 part_type_color3( particleType_DeflectionSpark_Small, c_white, c_white,  c_white)
 
+particleType_BloodSword = part_type_create()
+part_type_sprite(particleType_BloodSword, spr_blood_spark_sword, 0, 0, 0)
+part_type_size( particleType_BloodSword, 0.5, 2, 0, 0)
+part_type_life( particleType_BloodSword, 5, 10)
+part_type_alpha3(particleType_BloodSword, 1, 0.8 ,0.1)
+part_type_orientation(particleType_BloodSword, 0,359,0,.1,0)
+part_type_speed(particleType_BloodSword, 0, 0, 0, 0)
+part_type_direction( particleType_BloodSword, 0, 359, 0, 0);

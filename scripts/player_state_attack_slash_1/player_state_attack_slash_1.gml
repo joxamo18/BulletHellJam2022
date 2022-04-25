@@ -152,6 +152,11 @@ function player_state_attack_slash_1(){
 						
 							break
 						}
+						else
+						{
+							part_particles_create(obj_part_setup.particleSystem, x, y, obj_part_setup.particleType_Blood, 10)
+							part_particles_create(obj_part_setup.particleSystem, x, y, obj_part_setup.particleType_BloodSword, 1)
+						}
 						if (!obj_player.has_impact_sound_played)
 						{
 							obj_player.has_impact_sound_played = true
