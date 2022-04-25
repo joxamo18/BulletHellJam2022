@@ -19,7 +19,7 @@ function collision_check(){
 		{
 			with(collision_point(x, y, obj_gattling_gun, false, false))
 			{
-				hp -= 1
+				hp -= .5
 				audio_play_sound(snd_bullet_impact,0,false)
 				part_particles_create(obj_part_setup.particleSystem, other.x, other.y, obj_part_setup.particleType_Blood, 10)
 			}
@@ -30,7 +30,7 @@ function collision_check(){
 		{
 			with(collision_point(x, y, obj_spinningTurrent, false, false))
 			{
-				hp -= 1
+				hp -= .5
 				audio_play_sound(snd_bullet_impact,0,false)
 				part_particles_create(obj_part_setup.particleSystem, other.x, other.y, obj_part_setup.particleType_Blood, 10)
 			}

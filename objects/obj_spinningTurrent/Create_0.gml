@@ -33,7 +33,7 @@ lasers = [];
 bat_spawners = [];
 
 max_beam_firing_cooldown = 20
-beam_firing_cooldown = max_beam_firing_cooldown
+beam_firing_cooldown = max_beam_firing_cooldown 
 max_beam_firing_timer = 10
 beam_firing_timer = max_beam_firing_timer
 

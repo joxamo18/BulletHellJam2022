@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_warning.mp3",
-  "duration": 7.49715,
+  "duration": 8.986125,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

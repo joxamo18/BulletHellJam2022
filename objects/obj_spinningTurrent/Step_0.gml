@@ -7,7 +7,7 @@ if (in_combat) {
 	_dt = delta_time / 1000000
 
 	//managing state changes
-	if (hp / hp_max < 0.2 and beam_firing_cooldown > 0)
+	if (hp / hp_max < 0.15 and beam_firing_cooldown > 0)
 	{
 		if (instance_exists(obj_laser))
 		{
