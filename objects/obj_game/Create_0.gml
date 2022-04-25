@@ -18,5 +18,7 @@ warning_sound = ""
 warning_alpha = 1
 beaten_game_alpha = 0
 
+final_text_alpha = 0
+
 player_death_location_x = 0
 player_death_location_y = 0

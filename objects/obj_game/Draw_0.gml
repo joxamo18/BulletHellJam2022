@@ -45,6 +45,8 @@ if (global.gamestate == "start")
 	camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,
 	camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/4 + 32, "Luna, Vampire Slayer")
 	//Draw regular text
+
+	
 	draw_set_alpha(1);
 	draw_set_colour(c_white);
 	draw_set_font(fnt_smaller);
@@ -102,6 +104,17 @@ if (global.gamestate == "boss_beaten")
 		audio_play_sound(snd_ambient_ending, 0, true);
 	}
 	
+}
+
+if (audio_is_playing(snd_ambient_ending))
+{
+	final_text_alpha += .10 * (delta_time / 1000000)
+	draw_set_alpha(final_text_alpha);;
+	draw_set_colour(c_black);
+	draw_set_font(fnt_smaller);
+	draw_text(
+		camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,
+		camera_get_view_y(view_camera[0])+camera_get_view_height(view_camera[0])/2,"You did your best. Now allow yourself to rest.");
 }
 
 
