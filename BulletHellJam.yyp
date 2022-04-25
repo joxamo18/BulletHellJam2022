@@ -63,6 +63,7 @@
     {"id":{"name":"spr_enemy_fragment","path":"sprites/spr_enemy_fragment/spr_enemy_fragment.yy",},"order":5,},
     {"id":{"name":"obj_gattling_gun","path":"objects/obj_gattling_gun/obj_gattling_gun.yy",},"order":0,},
     {"id":{"name":"spr_player_face_left_idle_AIMING","path":"sprites/spr_player_face_left_idle_AIMING/spr_player_face_left_idle_AIMING.yy",},"order":8,},
+    {"id":{"name":"fnt_warning","path":"fonts/fnt_warning/fnt_warning.yy",},"order":4,},
     {"id":{"name":"snd_bullet_impact","path":"sounds/snd_bullet_impact/snd_bullet_impact.yy",},"order":22,},
     {"id":{"name":"scr_spinningTurret_pong_movement","path":"scripts/scr_spinningTurret_pong_movement/scr_spinningTurret_pong_movement.yy",},"order":0,},
     {"id":{"name":"collision_check","path":"scripts/collision_check/collision_check.yy",},"order":1,},
