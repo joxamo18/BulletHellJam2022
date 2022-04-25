@@ -7,7 +7,11 @@ uniform float alpha;
 
 void main()
 {
-    gl_FragColor = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord );
+	
+	vec4 getColor = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord );
+    float average = (getColor.r + getColor.g + getColor.b) / 3.0;
+	vec4 newColor = vec4(average, average, average, getColor.a);
+	gl_FragColor = newColor;
 	gl_FragColor.a = alpha;
 
 }

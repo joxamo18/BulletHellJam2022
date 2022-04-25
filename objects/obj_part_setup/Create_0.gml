@@ -9,6 +9,7 @@ part_type_size( particleType_Hit, 1.5, 2, 0.1, 0)
 part_type_life( particleType_Hit, 5, 15)
 part_type_alpha3(particleType_Hit, 1, 0.6 ,0.2)
 part_type_orientation(particleType_Hit, 0, 359, 0, 0, 0);
+part_type_color3( particleType_Hit, c_red, c_red, c_red)
 
 particleType_Spark = part_type_create()
 part_type_sprite(particleType_Spark, spr_particle_spot, 0, 0, 0)
@@ -18,7 +19,7 @@ part_type_alpha3(particleType_Spark, 1, 0.8 ,0.1)
 part_type_orientation(particleType_Spark, 0,359,0,0,0)
 part_type_speed(particleType_Spark, 2, 4, -0.1, 0)
 part_type_direction( particleType_Spark, 0, 359, 0, 0);
-part_type_color3( particleType_Spark, 45823, 829418, 952788) //orange
+part_type_color3( particleType_Spark,  c_white, c_white, c_white) //orange
 
 particleType_Blood = part_type_create()
 part_type_sprite(particleType_Blood, spr_particle_spot, 0, 0, 0)

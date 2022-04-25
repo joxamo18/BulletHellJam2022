@@ -156,6 +156,7 @@
     {"id":{"name":"obj_soldier_spawner","path":"objects/obj_soldier_spawner/obj_soldier_spawner.yy",},"order":26,},
     {"id":{"name":"spr_warning","path":"sprites/spr_warning/spr_warning.yy",},"order":1,},
     {"id":{"name":"spr_max_bat_attack_1","path":"sprites/spr_max_bat_attack_1/spr_max_bat_attack_1.yy",},"order":8,},
+    {"id":{"name":"sh_grayscale","path":"shaders/sh_grayscale/sh_grayscale.yy",},"order":0,},
     {"id":{"name":"snd_empty_clip","path":"sounds/snd_empty_clip/snd_empty_clip.yy",},"order":30,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":16,},
     {"id":{"name":"spr_bullet3","path":"sprites/spr_bullet3/spr_bullet3.yy",},"order":24,},
