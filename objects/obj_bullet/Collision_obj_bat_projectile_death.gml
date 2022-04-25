@@ -5,7 +5,7 @@ with(other)
 instance_destroy();
 }
 
-if (obj_player.sword_stamina < 1)
+if (instance_exists(obj_player) and obj_player.sword_stamina < 1)
 {
 	var stamina_to_add = obj_player.sword_increase_from_kill_rate
 	if (obj_player.sword_stamina + stamina_to_add > obj_player.max_stamina)

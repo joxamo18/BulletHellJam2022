@@ -84,12 +84,16 @@ function player_state_attack_slash_1(){
 			break
 	}
 	
+	var temp_mask_index = sprite_index
+	mask_index = spr_player_face_up_walk_u_d
 	if (place_free(x + v_x * slash_speed, y + v_y * slash_speed))
 	{
 		x = x + v_x * slash_speed
 		y = y + v_y * slash_speed
 	}
-
+	mask_index = temp_mask_index
+	
+	
 	if (sprite_index != slash_sprite)
 	{
 		sprite_index = slash_sprite
