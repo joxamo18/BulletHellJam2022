@@ -217,6 +217,7 @@
     {"id":{"name":"spr_bullet5","path":"sprites/spr_bullet5/spr_bullet5.yy",},"order":26,},
     {"id":{"name":"snd_minigun_windup","path":"sounds/snd_minigun_windup/snd_minigun_windup.yy",},"order":19,},
     {"id":{"name":"obj_enemyBullet","path":"objects/obj_enemyBullet/obj_enemyBullet.yy",},"order":0,},
+    {"id":{"name":"spr_out_of_stamina","path":"sprites/spr_out_of_stamina/spr_out_of_stamina.yy",},"order":28,},
     {"id":{"name":"spr_gattling_gun_arm","path":"sprites/spr_gattling_gun_arm/spr_gattling_gun_arm.yy",},"order":8,},
     {"id":{"name":"RightHook","path":"paths/RightHook/RightHook.yy",},"order":1,},
     {"id":{"name":"snd_beam_impact","path":"sounds/snd_beam_impact/snd_beam_impact.yy",},"order":25,},
