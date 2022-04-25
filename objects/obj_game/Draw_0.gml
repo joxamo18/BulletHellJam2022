@@ -10,12 +10,20 @@ if (instance_exists(obj_player))
 {
 	
 	draw_text(
-		camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/4,
+		camera_get_view_x(view_camera[0])+64,
 		camera_get_view_y(view_camera[0])+16,"Ammo");
 	
 	draw_text(
-		camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/4,
+		camera_get_view_x(view_camera[0])+64,
 		camera_get_view_y(view_camera[0])+54,obj_player.uzi_ammo)
+		
+	draw_text(
+		camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/4,
+		camera_get_view_y(view_camera[0])+16,"Stamina");
+	
+	draw_text(
+		camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/4,
+		camera_get_view_y(view_camera[0])+54,obj_player.sword_stamina)
 	
 	
 	draw_text(

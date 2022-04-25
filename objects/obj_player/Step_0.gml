@@ -3,6 +3,9 @@ if (global and global.gamestate == "start")
 	return
 }
 
+if (sword_stamina < 1) {
+	sword_stamina += increase_rate * (delta_time / 1000000)
+}
 if (hp <= 0)
 {
 	obj_game.player_death_location_x = x

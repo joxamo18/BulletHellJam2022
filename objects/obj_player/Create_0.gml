@@ -6,7 +6,13 @@ spd = 4;				//current movement speed
 weapon = 0;				//current weapon
 fire_rate = 10;			//current shooting speed
 uzi_ammo = 20;				//when ammo reaches zero, return to default weapon (unlimited ammo)
-cooldown = 0;	
+cooldown = 0;
+
+max_stamina = 1
+sword_stamina = 1;
+increase_rate = 0.15
+sword_depletion_rate = .3;
+sword_increase_from_kill_rate = .1
 
 
 hit_by_attack = ds_list_create();

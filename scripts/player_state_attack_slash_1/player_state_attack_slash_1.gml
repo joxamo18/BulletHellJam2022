@@ -133,6 +133,7 @@ function player_state_attack_slash_1(){
 							obj_player.uzi_ammo += ammo_to_add
 						}
 						
+						
 						if (object_index == obj_enemyBullet)
 						{
 								part_particles_create(obj_part_setup.particleSystem, x, y, obj_part_setup.particleType_DeflectionSpark, 1)
