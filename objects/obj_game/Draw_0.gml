@@ -13,9 +13,20 @@ if (instance_exists(obj_player) and global.gamestate != "start")
 		camera_get_view_x(view_camera[0])+64,
 		camera_get_view_y(view_camera[0])+16,"Ammo");
 	
-	draw_text(
-		camera_get_view_x(view_camera[0])+64,
-		camera_get_view_y(view_camera[0])+54,obj_player.uzi_ammo)
+	with(obj_player)
+	{
+
+
+		for (i = 1; i <= obj_player.uzi_ammo; i++)
+		{
+			draw_sprite(
+				spr_big_bullet, 
+				0, 
+				camera_get_view_x(view_camera[0])+32 + i * 3, 
+				camera_get_view_y(view_camera[0])+54)
+		}
+	
+	}
 		
 	draw_text(
 		camera_get_view_x(view_camera[0])+140,
@@ -31,8 +42,8 @@ if (instance_exists(obj_player) and global.gamestate != "start")
 			draw_sprite(
 				spr_stamina_bar, 
 				0, 
-				camera_get_view_x(view_camera[0])+125 + i * 5, 
-				camera_get_view_y(view_camera[0])+54)
+				camera_get_view_x(view_camera[0])+127 + i * 5, 
+				camera_get_view_y(view_camera[0])+50)
 		}
 	
 	}
@@ -51,7 +62,7 @@ if (instance_exists(obj_player) and global.gamestate != "start")
 			draw_sprite(
 				spr_heart, 
 				0, 
-				camera_get_view_x(view_camera[0])+170 + i * 20, 
+				camera_get_view_x(view_camera[0])+175 + i * 20, 
 				camera_get_view_y(view_camera[0])+54)
 		}
 	
