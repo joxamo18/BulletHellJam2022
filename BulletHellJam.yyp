@@ -6,6 +6,7 @@
     {"id":{"name":"PlayerState_Attack_Combo","path":"scripts/PlayerState_Attack_Combo/PlayerState_Attack_Combo.yy",},"order":0,},
     {"id":{"name":"spr_gattling_gun_walking_up","path":"sprites/spr_gattling_gun_walking_up/spr_gattling_gun_walking_up.yy",},"order":3,},
     {"id":{"name":"player_hit_flash","path":"shaders/player_hit_flash/player_hit_flash.yy",},"order":0,},
+    {"id":{"name":"obj_beginning_text","path":"objects/obj_beginning_text/obj_beginning_text.yy",},"order":29,},
     {"id":{"name":"spr_beam_attack_max","path":"sprites/spr_beam_attack_max/spr_beam_attack_max.yy",},"order":6,},
     {"id":{"name":"spr_soldier_walking_up","path":"sprites/spr_soldier_walking_up/spr_soldier_walking_up.yy",},"order":4,},
     {"id":{"name":"snd_sword_bullet_reflect_2","path":"sounds/snd_sword_bullet_reflect_2/snd_sword_bullet_reflect_2.yy",},"order":13,},
@@ -175,6 +176,7 @@
     {"id":{"name":"c_left_hook_room_2","path":"paths/c_left_hook_room_2/c_left_hook_room_2.yy",},"order":2,},
     {"id":{"name":"obj_start_level_event_trigger","path":"objects/obj_start_level_event_trigger/obj_start_level_event_trigger.yy",},"order":1,},
     {"id":{"name":"spr_particle_orange","path":"sprites/spr_particle_orange/spr_particle_orange.yy",},"order":1,},
+    {"id":{"name":"Beginning","path":"rooms/Beginning/Beginning.yy",},"order":7,},
     {"id":{"name":"approach","path":"scripts/approach/approach.yy",},"order":0,},
     {"id":{"name":"snd_minigun_windup_loop","path":"sounds/snd_minigun_windup_loop/snd_minigun_windup_loop.yy",},"order":20,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":1,},
@@ -252,6 +254,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"Beginning","path":"rooms/Beginning/Beginning.yy",},},
     {"roomId":{"name":"Main","path":"rooms/Main/Main.yy",},},
     {"roomId":{"name":"SpinningTurretTestRoom","path":"rooms/SpinningTurretTestRoom/SpinningTurretTestRoom.yy",},},
     {"roomId":{"name":"SoldierTestRoom","path":"rooms/SoldierTestRoom/SoldierTestRoom.yy",},},

@@ -1,6 +1,12 @@
 /// @description Update
 // You can write your code in this editor
 
+if(instance_exists(soldier_goal))
+{
+
+
+
+
 path_delete(path)
 path = path_add()
 
@@ -14,6 +20,7 @@ mp_grid_path(obj_pathfinding.grid, path, x, y, target_x, target_y, true)
 
 
 path_start(path, 2, path_action_stop, true)
+}
 
 alarm_set(0, 120)
 

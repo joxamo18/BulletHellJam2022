@@ -13,9 +13,6 @@ ammo_reload_timer = 0
 
 path = path_add()
 
-target_x = soldier_goal.x
-target_y = soldier_goal.y
-
 goal_reached = false
 arm_instance = false
 

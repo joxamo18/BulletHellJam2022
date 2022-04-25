@@ -25,8 +25,9 @@ max_rotation_timer = 10;
 left_direction_timer = max_rotation_timer;
 right_direction_timer = 0;
 
-turretsA = [0, 90, 180, 270];  
-turretsB = [45, 135, 225, 315]; 
+turretsA = [45, 135, 225, 315]; 
+turretsB = [0, 90, 180, 270];  
+
 
 lasers = [];
 bat_spawners = [];
