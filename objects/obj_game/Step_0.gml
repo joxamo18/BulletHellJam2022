@@ -12,6 +12,7 @@ if (global.gamestate == "start")
 		global.gamestate = "intro";
 		with (obj_player)
 		{
+			sprite_index = spr_player_face_up_walk_u_d
 			state = PLAYERSTATE.GAME_CONTROLLED
 		}
 	}
