@@ -25,13 +25,13 @@ if (instance_exists(obj_player) and global.gamestate != "start")
 	{
 
 		var amount_of_bars = floor(sword_stamina / sword_depletion_rate)
-		centerX = x-sprite_get_xoffset(sprite_index)+(sprite_get_width(sprite_index)/2)
+
 		for (i = 1; i <= amount_of_bars; i++)
 		{
 			draw_sprite(
 				spr_stamina_bar, 
 				0, 
-				camera_get_view_x(view_camera[0])+140 + i * 5, 
+				camera_get_view_x(view_camera[0])+125 + i * 5, 
 				camera_get_view_y(view_camera[0])+54)
 		}
 	
@@ -42,9 +42,21 @@ if (instance_exists(obj_player) and global.gamestate != "start")
 		camera_get_view_x(view_camera[0])+216,
 		camera_get_view_y(view_camera[0])+16, "Health")
 
-	draw_text(
-		camera_get_view_x(view_camera[0])+216,
-		camera_get_view_y(view_camera[0])+54, obj_player.hp)
+	with(obj_player)
+	{
+
+
+		for (i = 1; i <= obj_player.hp; i++)
+		{
+			draw_sprite(
+				spr_heart, 
+				0, 
+				camera_get_view_x(view_camera[0])+170 + i * 20, 
+				camera_get_view_y(view_camera[0])+54)
+		}
+	
+	}
+		
 }
 
 if (global.gamestate == "start")
