@@ -8,14 +8,30 @@ if (current_state == TURRET_STATE.PROJECTILE_BEAM and other.tag == "beam_goal")
 }
 
 
-if (current_state == TURRET_STATE.PROJECTILE_BAT and other.tag == "bat_goal")
+if (current_state == TURRET_STATE.PROJECTILE_BAT and other.tag == "bat_goal" and !at_bat_location)
 {
-	at_beam_location = true
+	var vX = bat_spawn_location.x - x
+	var vY = bat_spawn_location.y - y
+	
+	try {
+		var length = sqrt((vX * vX) + (vY * vY));
+	}
+	catch(error)
+	{
+		throw error
+	}
+	
+	if (length > 4)
+	{
+		return
+	}
+	
+	at_bat_location = true
 	sprite_index = spr_max_bat_attack_2
 	
 	audio_play_sound(snd_bat_summoning_layer_1,0,true)
 	audio_play_sound(snd_bat_summoning_layer_2,0,true)
-	audio_play_sound(snd_bat_summoning_layer_3,0,true)
+	//audio_play_sound(snd_bat_summoning_layer_3,0,true)
 	
 	for (var i = 0; i < array_length(bat_spawners); i++)
 	{

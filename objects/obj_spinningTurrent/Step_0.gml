@@ -14,6 +14,11 @@ if (in_combat) {
 			instance_destroy(obj_laser)
 		}
 		
+					audio_stop_sound(snd_beam_firing)
+			audio_stop_sound(snd_beam_firing_loop)
+			audio_stop_sound(snd_beam_power_up)
+			audio_stop_sound(snd_beam_impact)
+		
 		if (current_state != TURRET_STATE.PROJECTILE_BAT)
 		{
 			current_state = TURRET_STATE.PROJECTILE_BAT

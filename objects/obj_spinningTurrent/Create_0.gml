@@ -38,6 +38,7 @@ beam_firing_timer = max_beam_firing_timer
 
 rotationDirection = ""
 current_state = TURRET_STATE.PROJECTILE_FIRING
+at_bat_location = false
 
 enum TURRET_STATE {
 	PROJECTILE_FIRING,

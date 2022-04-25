@@ -66,6 +66,11 @@ if (global.gamestate == "boss_intro")
 if (global.gamestate == "boss_beaten" and boss_death_sound == 0)
 {
 	audio_stop_all()
+	with (obj_player)
+	{
+		state = PLAYERSTATE.GAME_CONTROLLED
+	}
+	
 	boss_death_sound = audio_play_sound(snd_boss_defeat, 0 , false)
 }
 
