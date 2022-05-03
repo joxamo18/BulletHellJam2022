@@ -196,3 +196,13 @@ if (instance_exists(obj_gattling_gun))
 	}
 }
 
+if (instance_exists(obj_player))
+{
+	if (global.gamestate != "boss_beaten")
+	{
+		
+		draw_sprite(spr_mouse_cursor, 0, mouse_x, mouse_y)
+	}
+	
+}
+window_set_cursor(cr_none)

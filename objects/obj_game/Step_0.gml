@@ -103,3 +103,13 @@ if (global.gamestate == "continue" and keyboard_check(vk_enter))
 	
 	instance_activate_all()
 }
+
+if ( keyboard_check(ord("R")))
+{
+	room_restart()
+}
+
+if ( keyboard_check(vk_escape))
+{
+	game_end()
+}

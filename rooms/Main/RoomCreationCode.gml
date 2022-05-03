@@ -21,3 +21,5 @@ layer_shader(TrainStartingPoint, sh_grayscale)
 var lay_walls =  layer_get_id("lay_walls")
 layer_shader(lay_walls, sh_grayscale)
 
+var Background =  layer_get_id("Background")
+layer_shader(Background, sh_grayscale)

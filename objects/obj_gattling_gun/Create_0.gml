@@ -9,7 +9,7 @@ ammo_reload_timer = 0
 
 
 
-hp = 50
+hp = 60
 hp_max = hp
 
 healthbar_width = 200

@@ -20,6 +20,7 @@ function player_state_free(){
 	else if (instance_exists(obj_player_arm) and !mouse_check_button(mb_left))
 	{
 		instance_destroy(obj_player_arm)
+		spd = basespd
 	}
 
 

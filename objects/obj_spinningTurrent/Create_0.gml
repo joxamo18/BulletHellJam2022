@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-hp = 150
+hp = 175
 hp_max = hp
 
 healthbar_width = 200

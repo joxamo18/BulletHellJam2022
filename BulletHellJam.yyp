@@ -110,6 +110,7 @@
     {"id":{"name":"panthress","path":"sounds/panthress/panthress.yy",},"order":1,},
     {"id":{"name":"obj_enemy_goal","path":"objects/obj_enemy_goal/obj_enemy_goal.yy",},"order":19,},
     {"id":{"name":"spr_weapon","path":"sprites/spr_weapon/spr_weapon.yy",},"order":9,},
+    {"id":{"name":"spr_mouse_cursor","path":"sprites/spr_mouse_cursor/spr_mouse_cursor.yy",},"order":34,},
     {"id":{"name":"obj_gattling_gun_arm","path":"objects/obj_gattling_gun_arm/obj_gattling_gun_arm.yy",},"order":1,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":18,},
     {"id":{"name":"player_axis_direction","path":"scripts/player_axis_direction/player_axis_direction.yy",},"order":5,},
@@ -261,8 +262,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Main","path":"rooms/Main/Main.yy",},},
     {"roomId":{"name":"Beginning","path":"rooms/Beginning/Beginning.yy",},},
+    {"roomId":{"name":"Main","path":"rooms/Main/Main.yy",},},
     {"roomId":{"name":"GattlingGunTestRoom","path":"rooms/GattlingGunTestRoom/GattlingGunTestRoom.yy",},},
     {"roomId":{"name":"SpinningTurretTestRoom","path":"rooms/SpinningTurretTestRoom/SpinningTurretTestRoom.yy",},},
     {"roomId":{"name":"SoldierTestRoom","path":"rooms/SoldierTestRoom/SoldierTestRoom.yy",},},
